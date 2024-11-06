@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -249,6 +249,7 @@
 				};
 			};
 			buildConfigurationList = 2C3CEA1F2CD981DF0031F4EB /* Build configuration list for PBXProject "TestSlots" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -260,7 +261,6 @@
 			packageReferences = (
 				2C317C0D2CDAD875002E58B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 2C3CEA252CD981DF0031F4EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

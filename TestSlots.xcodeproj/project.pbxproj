@@ -6,46 +6,116 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */; };
+		2C317C0C2CDAD7FE002E58B9 /* MenuGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C0B2CDAD7FE002E58B9 /* MenuGameView.swift */; };
+		2C317C0F2CDAD875002E58B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C317C0E2CDAD875002E58B9 /* SnapKit */; };
+		2C317C112CDAE218002E58B9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C102CDAE218002E58B9 /* UIColorExtension.swift */; };
+		2C317C132CDAE2A5002E58B9 /* Suranna-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C122CDAE2A5002E58B9 /* Suranna-Regular.ttf */; };
+		2C317C152CDAE699002E58B9 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C142CDAE699002E58B9 /* Inter-Bold.ttf */; };
+		2C317C172CDB60CE002E58B9 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C162CDB60CE002E58B9 /* CALayerExtension.swift */; };
+		2C317C1A2CDB62EF002E58B9 /* MenuGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C192CDB62EF002E58B9 /* MenuGameViewModel.swift */; };
+		2C317C1C2CDC0E96002E58B9 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */; };
+		2C317C202CDC13F8002E58B9 /* SlotsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */; };
+		2C317C212CDC13F8002E58B9 /* SlotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */; };
+		2C317C242CDC18ED002E58B9 /* FooterBetAndSpinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */; };
+		2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */; };
+		2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA402CDA3E3E0031F4EB /* LaunchScreen.storyboard */; };
+		2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */; };
+		2C3CEA4B2CDA3E3E0031F4EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA432CDA3E3E0031F4EB /* SceneDelegate.swift */; };
+		2C3CEA4F2CDA41D40031F4EB /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA4E2CDA41D40031F4EB /* LoadingViewController.xib */; };
+		2C3CEA502CDA41D40031F4EB /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA4D2CDA41D40031F4EB /* LoadingViewController.swift */; };
+		2C3CEA592CDA48D70031F4EB /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA582CDA48D70031F4EB /* UIFontExtension.swift */; };
+		2C3CEA5C2CDA4A690031F4EB /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA5B2CDA4A690031F4EB /* Judson-Bold.ttf */; };
+		2C3CEA602CDAC5A30031F4EB /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA5F2CDAC5A30031F4EB /* MainMenuViewController.xib */; };
+		2C3CEA612CDAC5A30031F4EB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA5E2CDAC5A30031F4EB /* MainMenuViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomGreenButton.swift; sourceTree = "<group>"; };
+		2C317C0B2CDAD7FE002E58B9 /* MenuGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGameView.swift; sourceTree = "<group>"; };
+		2C317C102CDAE218002E58B9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2C317C122CDAE2A5002E58B9 /* Suranna-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Suranna-Regular.ttf"; sourceTree = "<group>"; };
+		2C317C142CDAE699002E58B9 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		2C317C162CDB60CE002E58B9 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		2C317C192CDB62EF002E58B9 /* MenuGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGameViewModel.swift; sourceTree = "<group>"; };
+		2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsViewController.swift; sourceTree = "<group>"; };
+		2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotsViewController.xib; sourceTree = "<group>"; };
+		2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterBetAndSpinView.swift; sourceTree = "<group>"; };
 		2C3CEA242CD981DF0031F4EB /* TestSlots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSlots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C3CEA3E2CDA3E3E0031F4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C3CEA3F2CDA3E3E0031F4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C3CEA432CDA3E3E0031F4EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C3CEA4D2CDA41D40031F4EB /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		2C3CEA4E2CDA41D40031F4EB /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		2C3CEA582CDA48D70031F4EB /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		2C3CEA5B2CDA4A690031F4EB /* Judson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Bold.ttf"; sourceTree = "<group>"; };
+		2C3CEA5E2CDAC5A30031F4EB /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		2C3CEA5F2CDAC5A30031F4EB /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2C3CEA362CD981E00031F4EB /* Exceptions for "TestSlots" folder in "TestSlots" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 2C3CEA232CD981DF0031F4EB /* TestSlots */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C3CEA262CD981DF0031F4EB /* TestSlots */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2C3CEA362CD981E00031F4EB /* Exceptions for "TestSlots" folder in "TestSlots" target */,
-			);
-			path = TestSlots;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2C3CEA212CD981DF0031F4EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C317C0F2CDAD875002E58B9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C317C052CDAC66B002E58B9 /* UICustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C062CDAC6AA002E58B9 /* UICustomGreenButton */,
+			);
+			path = UICustomElements;
+			sourceTree = "<group>";
+		};
+		2C317C062CDAC6AA002E58B9 /* UICustomGreenButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */,
+			);
+			path = UICustomGreenButton;
+			sourceTree = "<group>";
+		};
+		2C317C182CDB62C2002E58B9 /* MenuGameItem */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C0B2CDAD7FE002E58B9 /* MenuGameView.swift */,
+				2C317C192CDB62EF002E58B9 /* MenuGameViewModel.swift */,
+			);
+			path = MenuGameItem;
+			sourceTree = "<group>";
+		};
+		2C317C1D2CDC13DE002E58B9 /* SlotsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C222CDC18B7002E58B9 /* FooterBetAndSpinView */,
+				2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */,
+				2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */,
+			);
+			path = SlotsViewController;
+			sourceTree = "<group>";
+		};
+		2C317C222CDC18B7002E58B9 /* FooterBetAndSpinView */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */,
+			);
+			path = FooterBetAndSpinView;
+			sourceTree = "<group>";
+		};
 		2C3CEA1B2CD981DF0031F4EB = {
 			isa = PBXGroup;
 			children = (
-				2C3CEA262CD981DF0031F4EB /* TestSlots */,
+				2C3CEA452CDA3E3E0031F4EB /* TestSlots */,
 				2C3CEA252CD981DF0031F4EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +126,88 @@
 				2C3CEA242CD981DF0031F4EB /* TestSlots.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2C3CEA452CDA3E3E0031F4EB /* TestSlots */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C052CDAC66B002E58B9 /* UICustomElements */,
+				2C3CEA552CDA48B10031F4EB /* Extension */,
+				2C3CEA532CDA43230031F4EB /* ViewControllers */,
+				2C3CEA522CDA430D0031F4EB /* Resource */,
+				2C3CEA512CDA43030031F4EB /* Launch */,
+			);
+			path = TestSlots;
+			sourceTree = "<group>";
+		};
+		2C3CEA512CDA43030031F4EB /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */,
+				2C3CEA432CDA3E3E0031F4EB /* SceneDelegate.swift */,
+				2C3CEA402CDA3E3E0031F4EB /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		2C3CEA522CDA430D0031F4EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C3CEA5A2CDA4A380031F4EB /* Fonts */,
+				2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */,
+				2C3CEA3E2CDA3E3E0031F4EB /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2C3CEA532CDA43230031F4EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C1D2CDC13DE002E58B9 /* SlotsViewController */,
+				2C3CEA5D2CDAC5860031F4EB /* MainMenuViewController */,
+				2C3CEA542CDA432F0031F4EB /* LoadingViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C3CEA542CDA432F0031F4EB /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C3CEA4D2CDA41D40031F4EB /* LoadingViewController.swift */,
+				2C3CEA4E2CDA41D40031F4EB /* LoadingViewController.xib */,
+			);
+			path = LoadingViewController;
+			sourceTree = "<group>";
+		};
+		2C3CEA552CDA48B10031F4EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C3CEA582CDA48D70031F4EB /* UIFontExtension.swift */,
+				2C317C102CDAE218002E58B9 /* UIColorExtension.swift */,
+				2C317C162CDB60CE002E58B9 /* CALayerExtension.swift */,
+				2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2C3CEA5A2CDA4A380031F4EB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C142CDAE699002E58B9 /* Inter-Bold.ttf */,
+				2C3CEA5B2CDA4A690031F4EB /* Judson-Bold.ttf */,
+				2C317C122CDAE2A5002E58B9 /* Suranna-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C3CEA5D2CDAC5860031F4EB /* MainMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C182CDB62C2002E58B9 /* MenuGameItem */,
+				2C3CEA5E2CDAC5A30031F4EB /* MainMenuViewController.swift */,
+				2C3CEA5F2CDAC5A30031F4EB /* MainMenuViewController.xib */,
+			);
+			path = MainMenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,11 +225,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				2C3CEA262CD981DF0031F4EB /* TestSlots */,
-			);
 			name = TestSlots;
 			packageProductDependencies = (
+				2C317C0E2CDAD875002E58B9 /* SnapKit */,
 			);
 			productName = TestSlots;
 			productReference = 2C3CEA242CD981DF0031F4EB /* TestSlots.app */;
@@ -107,6 +257,9 @@
 			);
 			mainGroup = 2C3CEA1B2CD981DF0031F4EB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2C317C0D2CDAD875002E58B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2C3CEA252CD981DF0031F4EB /* Products */;
 			projectDirPath = "";
@@ -122,6 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C317C132CDAE2A5002E58B9 /* Suranna-Regular.ttf in Resources */,
+				2C3CEA5C2CDA4A690031F4EB /* Judson-Bold.ttf in Resources */,
+				2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */,
+				2C317C152CDAE699002E58B9 /* Inter-Bold.ttf in Resources */,
+				2C317C202CDC13F8002E58B9 /* SlotsViewController.xib in Resources */,
+				2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */,
+				2C3CEA602CDAC5A30031F4EB /* MainMenuViewController.xib in Resources */,
+				2C3CEA4F2CDA41D40031F4EB /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +293,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C317C0C2CDAD7FE002E58B9 /* MenuGameView.swift in Sources */,
+				2C317C1A2CDB62EF002E58B9 /* MenuGameViewModel.swift in Sources */,
+				2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */,
+				2C3CEA612CDAC5A30031F4EB /* MainMenuViewController.swift in Sources */,
+				2C317C212CDC13F8002E58B9 /* SlotsViewController.swift in Sources */,
+				2C317C242CDC18ED002E58B9 /* FooterBetAndSpinView.swift in Sources */,
+				2C317C112CDAE218002E58B9 /* UIColorExtension.swift in Sources */,
+				2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */,
+				2C3CEA4B2CDA3E3E0031F4EB /* SceneDelegate.swift in Sources */,
+				2C317C172CDB60CE002E58B9 /* CALayerExtension.swift in Sources */,
+				2C3CEA592CDA48D70031F4EB /* UIFontExtension.swift in Sources */,
+				2C317C1C2CDC0E96002E58B9 /* UIViewControllerExtension.swift in Sources */,
+				2C3CEA502CDA41D40031F4EB /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C3CEA402CDA3E3E0031F4EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C3CEA3F2CDA3E3E0031F4EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2C3CEA382CD981E00031F4EB /* Debug */ = {
@@ -147,12 +332,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q397TP2A3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestSlots/Info.plist;
+				INFOPLIST_FILE = TestSlots/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,12 +358,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q397TP2A3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestSlots/Info.plist;
+				INFOPLIST_FILE = TestSlots/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C317C0D2CDAD875002E58B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C317C0E2CDAD875002E58B9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C317C0D2CDAD875002E58B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C3CEA1C2CD981DF0031F4EB /* Project object */;
 }

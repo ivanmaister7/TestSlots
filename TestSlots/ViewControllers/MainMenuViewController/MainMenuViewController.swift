@@ -34,7 +34,7 @@ class MainMenuViewController: UIViewController {
             MenuGameViewModel(gameName: "Roulette",
                               gameIcon: .gameRouletteIcon,
                               onClickAction: { [weak self] in
-                                  self?.navigationController?.pushViewController(UIViewController(), animated: true)
+                                  self?.navigationController?.pushViewController(RouletteViewController(), animated: true)
                               }),
             MenuGameViewModel(gameName: "Plinko",
                               gameIcon: .gamePlinkoIcon,

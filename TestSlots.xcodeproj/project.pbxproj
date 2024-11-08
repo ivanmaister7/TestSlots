@@ -18,7 +18,30 @@
 		2C317C1C2CDC0E96002E58B9 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */; };
 		2C317C202CDC13F8002E58B9 /* SlotsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */; };
 		2C317C212CDC13F8002E58B9 /* SlotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */; };
-		2C317C242CDC18ED002E58B9 /* FooterBetAndSpinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */; };
+		2C317C242CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C232CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift */; };
+		2C317C272CDCC946002E58B9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C262CDCC946002E58B9 /* StorageManager.swift */; };
+		2C317C292CDCCCEE002E58B9 /* SlotsGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C282CDCCCEE002E58B9 /* SlotsGameEngine.swift */; };
+		2C317C2C2CDCDCEA002E58B9 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C2B2CDCDCEA002E58B9 /* ArrayExtension.swift */; };
+		2C317C2E2CDCEB87002E58B9 /* UIBalanceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C2D2CDCEB87002E58B9 /* UIBalanceLabel.swift */; };
+		2C317C302CDCF71C002E58B9 /* KohSantepheap-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C2F2CDCF71C002E58B9 /* KohSantepheap-Bold.ttf */; };
+		2C317C322CDCF857002E58B9 /* UITwoRowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C312CDCF857002E58B9 /* UITwoRowLabel.swift */; };
+		2C317C342CDCFCB1002E58B9 /* UIBetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C332CDCFCB1002E58B9 /* UIBetView.swift */; };
+		2C317C372CDD810D002E58B9 /* MiniGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C362CDD810D002E58B9 /* MiniGameEngine.swift */; };
+		2C317C392CDD8483002E58B9 /* SlotsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C382CDD8483002E58B9 /* SlotsViewControllerExtension.swift */; };
+		2C317C3B2CDD856F002E58B9 /* UIFooterSpinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C3A2CDD856F002E58B9 /* UIFooterSpinDelegate.swift */; };
+		2C317C3D2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C3C2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift */; };
+		2C317C412CDD8DB9002E58B9 /* SlotMachineScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C402CDD8DB9002E58B9 /* SlotMachineScene.swift */; };
+		2C317C432CDD8DF0002E58B9 /* SlotMachineSceneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C422CDD8DF0002E58B9 /* SlotMachineSceneConfiguration.swift */; };
+		2C317C452CDD8E16002E58B9 /* SlotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C442CDD8E16002E58B9 /* SlotsModel.swift */; };
+		2C317C472CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C462CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift */; };
+		2C317C4B2CDE14B2002E58B9 /* RouletteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C4A2CDE14B2002E58B9 /* RouletteScene.swift */; };
+		2C317C4D2CDE162B002E58B9 /* RouletteSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C4C2CDE162B002E58B9 /* RouletteSceneDelegate.swift */; };
+		2C317C512CDE2394002E58B9 /* RouletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C502CDE2394002E58B9 /* RouletteViewController.xib */; };
+		2C317C522CDE2394002E58B9 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C4F2CDE2394002E58B9 /* RouletteViewController.swift */; };
+		2C317C542CDE23AA002E58B9 /* RouletteViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C532CDE23AA002E58B9 /* RouletteViewControllerExtension.swift */; };
+		2C317C562CDE2561002E58B9 /* RouletteGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */; };
+		2C317C582CDE25A8002E58B9 /* RouletteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C572CDE25A8002E58B9 /* RouletteModel.swift */; };
+		2C317C5A2CDE2A9F002E58B9 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */; };
 		2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */; };
 		2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA402CDA3E3E0031F4EB /* LaunchScreen.storyboard */; };
 		2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */; };
@@ -42,7 +65,30 @@
 		2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsViewController.swift; sourceTree = "<group>"; };
 		2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotsViewController.xib; sourceTree = "<group>"; };
-		2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterBetAndSpinView.swift; sourceTree = "<group>"; };
+		2C317C232CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFooterBetAndSpinView.swift; sourceTree = "<group>"; };
+		2C317C262CDCC946002E58B9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		2C317C282CDCCCEE002E58B9 /* SlotsGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsGameEngine.swift; sourceTree = "<group>"; };
+		2C317C2B2CDCDCEA002E58B9 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		2C317C2D2CDCEB87002E58B9 /* UIBalanceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBalanceLabel.swift; sourceTree = "<group>"; };
+		2C317C2F2CDCF71C002E58B9 /* KohSantepheap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KohSantepheap-Bold.ttf"; sourceTree = "<group>"; };
+		2C317C312CDCF857002E58B9 /* UITwoRowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITwoRowLabel.swift; sourceTree = "<group>"; };
+		2C317C332CDCFCB1002E58B9 /* UIBetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBetView.swift; sourceTree = "<group>"; };
+		2C317C362CDD810D002E58B9 /* MiniGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameEngine.swift; sourceTree = "<group>"; };
+		2C317C382CDD8483002E58B9 /* SlotsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsViewControllerExtension.swift; sourceTree = "<group>"; };
+		2C317C3A2CDD856F002E58B9 /* UIFooterSpinDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFooterSpinDelegate.swift; sourceTree = "<group>"; };
+		2C317C3C2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFooterBetAndSpinViewModel.swift; sourceTree = "<group>"; };
+		2C317C402CDD8DB9002E58B9 /* SlotMachineScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineScene.swift; sourceTree = "<group>"; };
+		2C317C422CDD8DF0002E58B9 /* SlotMachineSceneConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineSceneConfiguration.swift; sourceTree = "<group>"; };
+		2C317C442CDD8E16002E58B9 /* SlotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsModel.swift; sourceTree = "<group>"; };
+		2C317C462CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineSceneDelegate.swift; sourceTree = "<group>"; };
+		2C317C4A2CDE14B2002E58B9 /* RouletteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteScene.swift; sourceTree = "<group>"; };
+		2C317C4C2CDE162B002E58B9 /* RouletteSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteSceneDelegate.swift; sourceTree = "<group>"; };
+		2C317C4F2CDE2394002E58B9 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
+		2C317C502CDE2394002E58B9 /* RouletteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouletteViewController.xib; sourceTree = "<group>"; };
+		2C317C532CDE23AA002E58B9 /* RouletteViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewControllerExtension.swift; sourceTree = "<group>"; };
+		2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteGameEngine.swift; sourceTree = "<group>"; };
+		2C317C572CDE25A8002E58B9 /* RouletteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteModel.swift; sourceTree = "<group>"; };
+		2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		2C3CEA242CD981DF0031F4EB /* TestSlots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSlots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,17 +118,13 @@
 		2C317C052CDAC66B002E58B9 /* UICustomElements */ = {
 			isa = PBXGroup;
 			children = (
-				2C317C062CDAC6AA002E58B9 /* UICustomGreenButton */,
+				2C317C222CDC18B7002E58B9 /* UIFooterBetAndSpinView */,
+				2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */,
+				2C317C2D2CDCEB87002E58B9 /* UIBalanceLabel.swift */,
+				2C317C312CDCF857002E58B9 /* UITwoRowLabel.swift */,
+				2C317C332CDCFCB1002E58B9 /* UIBetView.swift */,
 			);
 			path = UICustomElements;
-			sourceTree = "<group>";
-		};
-		2C317C062CDAC6AA002E58B9 /* UICustomGreenButton */ = {
-			isa = PBXGroup;
-			children = (
-				2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */,
-			);
-			path = UICustomGreenButton;
 			sourceTree = "<group>";
 		};
 		2C317C182CDB62C2002E58B9 /* MenuGameItem */ = {
@@ -97,19 +139,89 @@
 		2C317C1D2CDC13DE002E58B9 /* SlotsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2C317C222CDC18B7002E58B9 /* FooterBetAndSpinView */,
+				2C317C382CDD8483002E58B9 /* SlotsViewControllerExtension.swift */,
 				2C317C1E2CDC13F8002E58B9 /* SlotsViewController.swift */,
 				2C317C1F2CDC13F8002E58B9 /* SlotsViewController.xib */,
 			);
 			path = SlotsViewController;
 			sourceTree = "<group>";
 		};
-		2C317C222CDC18B7002E58B9 /* FooterBetAndSpinView */ = {
+		2C317C222CDC18B7002E58B9 /* UIFooterBetAndSpinView */ = {
 			isa = PBXGroup;
 			children = (
-				2C317C232CDC18ED002E58B9 /* FooterBetAndSpinView.swift */,
+				2C317C232CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift */,
+				2C317C3A2CDD856F002E58B9 /* UIFooterSpinDelegate.swift */,
+				2C317C3C2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift */,
 			);
-			path = FooterBetAndSpinView;
+			path = UIFooterBetAndSpinView;
+			sourceTree = "<group>";
+		};
+		2C317C252CDCC8B2002E58B9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C352CDD80E4002E58B9 /* MiniGameEngine */,
+				2C317C262CDCC946002E58B9 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2C317C352CDD80E4002E58B9 /* MiniGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C362CDD810D002E58B9 /* MiniGameEngine.swift */,
+				2C317C282CDCCCEE002E58B9 /* SlotsGameEngine.swift */,
+				2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */,
+			);
+			path = MiniGameEngine;
+			sourceTree = "<group>";
+		};
+		2C317C3E2CDD8CBB002E58B9 /* Slots */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C3F2CDD8D97002E58B9 /* SlotMachineScene */,
+				2C317C1D2CDC13DE002E58B9 /* SlotsViewController */,
+			);
+			path = Slots;
+			sourceTree = "<group>";
+		};
+		2C317C3F2CDD8D97002E58B9 /* SlotMachineScene */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C442CDD8E16002E58B9 /* SlotsModel.swift */,
+				2C317C422CDD8DF0002E58B9 /* SlotMachineSceneConfiguration.swift */,
+				2C317C402CDD8DB9002E58B9 /* SlotMachineScene.swift */,
+				2C317C462CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift */,
+			);
+			path = SlotMachineScene;
+			sourceTree = "<group>";
+		};
+		2C317C482CDE148D002E58B9 /* Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C4E2CDE2381002E58B9 /* RouletteViewController */,
+				2C317C492CDE14A2002E58B9 /* RouletteScene */,
+			);
+			path = Roulette;
+			sourceTree = "<group>";
+		};
+		2C317C492CDE14A2002E58B9 /* RouletteScene */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C572CDE25A8002E58B9 /* RouletteModel.swift */,
+				2C317C4A2CDE14B2002E58B9 /* RouletteScene.swift */,
+				2C317C4C2CDE162B002E58B9 /* RouletteSceneDelegate.swift */,
+			);
+			path = RouletteScene;
+			sourceTree = "<group>";
+		};
+		2C317C4E2CDE2381002E58B9 /* RouletteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C532CDE23AA002E58B9 /* RouletteViewControllerExtension.swift */,
+				2C317C4F2CDE2394002E58B9 /* RouletteViewController.swift */,
+				2C317C502CDE2394002E58B9 /* RouletteViewController.xib */,
+			);
+			path = RouletteViewController;
 			sourceTree = "<group>";
 		};
 		2C3CEA1B2CD981DF0031F4EB = {
@@ -131,10 +243,11 @@
 		2C3CEA452CDA3E3E0031F4EB /* TestSlots */ = {
 			isa = PBXGroup;
 			children = (
+				2C317C252CDCC8B2002E58B9 /* Managers */,
 				2C317C052CDAC66B002E58B9 /* UICustomElements */,
-				2C3CEA552CDA48B10031F4EB /* Extension */,
+				2C3CEA552CDA48B10031F4EB /* Extensions */,
 				2C3CEA532CDA43230031F4EB /* ViewControllers */,
-				2C3CEA522CDA430D0031F4EB /* Resource */,
+				2C3CEA522CDA430D0031F4EB /* Resources */,
 				2C3CEA512CDA43030031F4EB /* Launch */,
 			);
 			path = TestSlots;
@@ -150,20 +263,21 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		2C3CEA522CDA430D0031F4EB /* Resource */ = {
+		2C3CEA522CDA430D0031F4EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2C3CEA5A2CDA4A380031F4EB /* Fonts */,
 				2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */,
 				2C3CEA3E2CDA3E3E0031F4EB /* Info.plist */,
 			);
-			path = Resource;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2C3CEA532CDA43230031F4EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2C317C1D2CDC13DE002E58B9 /* SlotsViewController */,
+				2C317C482CDE148D002E58B9 /* Roulette */,
+				2C317C3E2CDD8CBB002E58B9 /* Slots */,
 				2C3CEA5D2CDAC5860031F4EB /* MainMenuViewController */,
 				2C3CEA542CDA432F0031F4EB /* LoadingViewController */,
 			);
@@ -179,20 +293,23 @@
 			path = LoadingViewController;
 			sourceTree = "<group>";
 		};
-		2C3CEA552CDA48B10031F4EB /* Extension */ = {
+		2C3CEA552CDA48B10031F4EB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				2C3CEA582CDA48D70031F4EB /* UIFontExtension.swift */,
 				2C317C102CDAE218002E58B9 /* UIColorExtension.swift */,
 				2C317C162CDB60CE002E58B9 /* CALayerExtension.swift */,
 				2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */,
+				2C317C2B2CDCDCEA002E58B9 /* ArrayExtension.swift */,
+				2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2C3CEA5A2CDA4A380031F4EB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2C317C2F2CDCF71C002E58B9 /* KohSantepheap-Bold.ttf */,
 				2C317C142CDAE699002E58B9 /* Inter-Bold.ttf */,
 				2C3CEA5B2CDA4A690031F4EB /* Judson-Bold.ttf */,
 				2C317C122CDAE2A5002E58B9 /* Suranna-Regular.ttf */,
@@ -278,6 +395,8 @@
 				2C317C132CDAE2A5002E58B9 /* Suranna-Regular.ttf in Resources */,
 				2C3CEA5C2CDA4A690031F4EB /* Judson-Bold.ttf in Resources */,
 				2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */,
+				2C317C302CDCF71C002E58B9 /* KohSantepheap-Bold.ttf in Resources */,
+				2C317C512CDE2394002E58B9 /* RouletteViewController.xib in Resources */,
 				2C317C152CDAE699002E58B9 /* Inter-Bold.ttf in Resources */,
 				2C317C202CDC13F8002E58B9 /* SlotsViewController.xib in Resources */,
 				2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */,
@@ -295,17 +414,38 @@
 			files = (
 				2C317C0C2CDAD7FE002E58B9 /* MenuGameView.swift in Sources */,
 				2C317C1A2CDB62EF002E58B9 /* MenuGameViewModel.swift in Sources */,
+				2C317C542CDE23AA002E58B9 /* RouletteViewControllerExtension.swift in Sources */,
+				2C317C522CDE2394002E58B9 /* RouletteViewController.swift in Sources */,
+				2C317C392CDD8483002E58B9 /* SlotsViewControllerExtension.swift in Sources */,
+				2C317C2E2CDCEB87002E58B9 /* UIBalanceLabel.swift in Sources */,
+				2C317C472CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift in Sources */,
 				2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */,
+				2C317C582CDE25A8002E58B9 /* RouletteModel.swift in Sources */,
+				2C317C372CDD810D002E58B9 /* MiniGameEngine.swift in Sources */,
+				2C317C272CDCC946002E58B9 /* StorageManager.swift in Sources */,
+				2C317C432CDD8DF0002E58B9 /* SlotMachineSceneConfiguration.swift in Sources */,
 				2C3CEA612CDAC5A30031F4EB /* MainMenuViewController.swift in Sources */,
+				2C317C342CDCFCB1002E58B9 /* UIBetView.swift in Sources */,
+				2C317C3B2CDD856F002E58B9 /* UIFooterSpinDelegate.swift in Sources */,
 				2C317C212CDC13F8002E58B9 /* SlotsViewController.swift in Sources */,
-				2C317C242CDC18ED002E58B9 /* FooterBetAndSpinView.swift in Sources */,
+				2C317C4D2CDE162B002E58B9 /* RouletteSceneDelegate.swift in Sources */,
+				2C317C242CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift in Sources */,
+				2C317C5A2CDE2A9F002E58B9 /* DoubleExtension.swift in Sources */,
+				2C317C322CDCF857002E58B9 /* UITwoRowLabel.swift in Sources */,
+				2C317C3D2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift in Sources */,
 				2C317C112CDAE218002E58B9 /* UIColorExtension.swift in Sources */,
 				2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */,
 				2C3CEA4B2CDA3E3E0031F4EB /* SceneDelegate.swift in Sources */,
 				2C317C172CDB60CE002E58B9 /* CALayerExtension.swift in Sources */,
+				2C317C562CDE2561002E58B9 /* RouletteGameEngine.swift in Sources */,
+				2C317C4B2CDE14B2002E58B9 /* RouletteScene.swift in Sources */,
+				2C317C2C2CDCDCEA002E58B9 /* ArrayExtension.swift in Sources */,
 				2C3CEA592CDA48D70031F4EB /* UIFontExtension.swift in Sources */,
+				2C317C452CDD8E16002E58B9 /* SlotsModel.swift in Sources */,
 				2C317C1C2CDC0E96002E58B9 /* UIViewControllerExtension.swift in Sources */,
 				2C3CEA502CDA41D40031F4EB /* LoadingViewController.swift in Sources */,
+				2C317C412CDD8DB9002E58B9 /* SlotMachineScene.swift in Sources */,
+				2C317C292CDCCCEE002E58B9 /* SlotsGameEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +472,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q397TP2A3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestSlots/Resource/Info.plist;
+				INFOPLIST_FILE = TestSlots/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -358,7 +498,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q397TP2A3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestSlots/Resource/Info.plist;
+				INFOPLIST_FILE = TestSlots/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

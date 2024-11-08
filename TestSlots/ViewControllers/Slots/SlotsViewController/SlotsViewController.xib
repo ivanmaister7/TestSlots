@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlotsViewController" customModule="TestSlots" customModuleProvider="target">
+            <connections>
+                <outlet property="footerView" destination="rAm-ux-vBH" id="LQK-cX-GGX"/>
+                <outlet property="slotsGameView" destination="sRu-OR-aae" id="yBQ-Ak-V16"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SlotsBg" translatesAutoresizingMaskIntoConstraints="NO" id="otx-pB-0fl">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SlotsGameBg" translatesAutoresizingMaskIntoConstraints="NO" id="GlI-mw-2ZF">
+                    <rect key="frame" x="85.333333333333314" y="-40" width="681.33333333333348" height="416.33333333333331"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBg" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-N4-oHd">
+                    <rect key="frame" x="0.0" y="326.33333333333331" width="852" height="66.666666666666686"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAm-ux-vBH" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
+                    <rect key="frame" x="59" y="326.33333333333331" width="734" height="45.666666666666686"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRu-OR-aae">
+                    <rect key="frame" x="204.33333333333334" y="50" width="443.33333333333326" height="276.33333333333331"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="otx-pB-0fl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0JR-cw-c2r"/>
+                <constraint firstItem="sRu-OR-aae" firstAttribute="centerX" secondItem="GlI-mw-2ZF" secondAttribute="centerX" id="0lF-yC-AT4"/>
+                <constraint firstItem="q9X-N4-oHd" firstAttribute="top" secondItem="GlI-mw-2ZF" secondAttribute="bottom" constant="-50" id="3co-zM-dSV"/>
+                <constraint firstAttribute="trailing" secondItem="otx-pB-0fl" secondAttribute="trailing" id="EdX-4x-M3o"/>
+                <constraint firstItem="q9X-N4-oHd" firstAttribute="top" secondItem="sRu-OR-aae" secondAttribute="bottom" id="EhH-d2-r9B"/>
+                <constraint firstItem="q9X-N4-oHd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fnn-go-dEt"/>
+                <constraint firstAttribute="trailing" secondItem="q9X-N4-oHd" secondAttribute="trailing" id="Pzk-cP-2jR"/>
+                <constraint firstItem="sRu-OR-aae" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="RhH-0B-hyf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rAm-ux-vBH" secondAttribute="bottom" id="X9p-Lm-EGR"/>
+                <constraint firstItem="GlI-mw-2ZF" firstAttribute="width" secondItem="otx-pB-0fl" secondAttribute="width" multiplier="0.8" id="Xil-oL-Vwv"/>
+                <constraint firstItem="GlI-mw-2ZF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bcH-eD-YpN"/>
+                <constraint firstItem="q9X-N4-oHd" firstAttribute="height" secondItem="otx-pB-0fl" secondAttribute="height" multiplier="0.17" id="cbg-4T-SuJ"/>
+                <constraint firstItem="sRu-OR-aae" firstAttribute="width" secondItem="GlI-mw-2ZF" secondAttribute="width" multiplier="0.65" id="fEQ-0v-2nG"/>
+                <constraint firstItem="rAm-ux-vBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m9P-3i-yqR"/>
+                <constraint firstItem="GlI-mw-2ZF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-40" id="ox6-Tw-Ize"/>
+                <constraint firstAttribute="bottom" secondItem="otx-pB-0fl" secondAttribute="bottom" id="pyW-TY-Iea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rAm-ux-vBH" secondAttribute="trailing" id="vFJ-na-iqd"/>
+                <constraint firstItem="rAm-ux-vBH" firstAttribute="top" secondItem="q9X-N4-oHd" secondAttribute="top" id="vJZ-bC-oml"/>
+                <constraint firstAttribute="bottom" secondItem="q9X-N4-oHd" secondAttribute="bottom" id="xgW-Io-q5P"/>
+                <constraint firstItem="otx-pB-0fl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zUG-Vu-DSM"/>
+            </constraints>
+            <point key="canvasLocation" x="108" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FooterBg" width="1688" height="128"/>
+        <image name="SlotsBg" width="1688" height="780"/>
+        <image name="SlotsGameBg" width="1452" height="824"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -18,6 +18,7 @@ class StorageManager {
         if self.getBalance() == nil { saveBalance(value: 10_000) }
         if self.getLastBet() == nil { saveLastBet(value: 1_000) }
         if self.getLastWin() == nil { saveLastWin(value: 0) }
+        if self.getIsSoundOn() == nil { setValue(forKey: .isSoundOn, value: true) }
     }
     
     private func getValue(forKey key: StorageKeys) -> Any? {
@@ -51,10 +52,23 @@ class StorageManager {
     func getLastWin() -> Int? {
         getValue(forKey: .lastWin) as? Int
     }
+    
+    func saveIsSoundOn(value: Bool) {
+        if getIsSoundOn() ?? false != value {
+            value ? SoundManager.shared.playSound() : SoundManager.shared.stopSound()
+        }
+        
+        setValue(forKey: .isSoundOn, value: value)
+    }
+    
+    func getIsSoundOn() -> Bool? {
+        getValue(forKey: .isSoundOn) as? Bool
+    }
 }
 
 enum StorageKeys: String {
     case balance
     case lastBet
     case lastWin
+    case isSoundOn
 }

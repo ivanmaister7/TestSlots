@@ -50,6 +50,8 @@ class LoadingViewController: UIViewController {
         //We can invalidate() timer, for example, after loading some data
         DispatchQueue.main.asyncAfter(deadline: .now() + loadingAnimationDuration) {
             self.loadingTimer?.invalidate()
+            SoundManager.shared
+            StorageManager.defaults
             self.presentMenuViewController()
         }
     }

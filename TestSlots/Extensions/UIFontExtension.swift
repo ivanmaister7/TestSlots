@@ -48,4 +48,8 @@ extension UIFont {
     static func getKohSantepheap700(size: CGFloat) -> UIFont {
         return getFont(fontName: "KohSantepheap-Bold", size: size)
     }
+    
+    static func getOpenSans700(size: CGFloat) -> UIFont {
+        return getFont(fontName: "OpenSans-Bold", size: size)
+    }
 }

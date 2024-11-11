@@ -9,6 +9,7 @@ import UIKit
 
 extension UIViewController {
     func shareApp() {
+        
 #warning("Replace appUrl and message to config file")
         let appURL = URL(string: "https://apps.apple.com/app/idYOUR_APP_ID")!
         let message = "Check out this awesome app!"

@@ -6,17 +6,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsViewController: UIViewController {
     let privacyPolicyLink: String = "https://www.google.com"
     let touLink: String = "https://www.youtube.com"
     
-#warning("replace true on Storage.IsSoundOn")
-    var isSoundOn = true {
+    var isSoundOn = false {
         didSet {
             let soundButton = buttonsStack.arrangedSubviews.first as? UICustomGreenButton
             soundButton?.setBackgroundImage(UIImage(resource: (isSoundOn ? .smallCornerButtonBg : .smallCornerButtonUnactiveBg)), for: .normal)
             soundButton?.setTitle("sound \(isSoundOn ? "on" : "off")".uppercased(), for: .normal)
+            
+            StorageManager.defaults.saveIsSoundOn(value: isSoundOn)
         }
     }
     
@@ -40,6 +42,8 @@ class SettingsViewController: UIViewController {
             button.addTarget(self, action: $0.action, for: .touchUpInside)
             self.buttonsStack.addArrangedSubview(button)
         }
+        
+        isSoundOn = StorageManager.defaults.getIsSoundOn() ?? false
     }
     
     @objc private func soundOnTapped() {

@@ -27,6 +27,9 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
     let topBalanceOffset = 48.0
     let spacingX = 8.0
     
+    let playTitle = "play"
+    let spinTitle = "spin"
+    
     weak var spinDelegate: UIFooterSpinDelegate?
     var vm = UIFooterBetAndSpinViewModel()
     var type: UIFooterBetAndSpinViewType = .version1 {
@@ -52,7 +55,7 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
     }()
     
     lazy var spinButton: UICustomGreenButton = {
-        let button = UICustomGreenButton(text: "spin", image: .largeCornerButtonBg)
+        let button = UICustomGreenButton(text: spinTitle, image: .largeCornerButtonBg)
         button.addTarget(self, action: #selector(spinButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -80,7 +83,7 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
             addSubview(maxBetButton)
             setupConstraintsVersion1()
         } else if type == .version2 {
-            spinButton.setTitle("play".uppercased(), for: .normal)
+            spinButton.setTitle(playTitle.uppercased(), for: .normal)
             setupConstraintsVersion2()
         }
         

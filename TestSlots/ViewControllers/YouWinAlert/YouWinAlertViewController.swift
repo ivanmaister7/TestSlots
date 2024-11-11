@@ -14,6 +14,9 @@ class YouWinAlertViewController: UIViewController {
     @IBOutlet weak var youWinLabel: UILabel!
     @IBOutlet weak var youWinStack: UIStackView!
     
+    let youWinTitle = "You Win!"
+    let congratulationsTitle = "Congratulations!"
+    
     var bg: ImageResource
     
     lazy var playMoreButton: UICustomGreenButton = {
@@ -37,13 +40,13 @@ class YouWinAlertViewController: UIViewController {
         
         alertBackground.image = UIImage(resource: bg)
         
-        youWinLabel.text = "You Win!"
+        youWinLabel.text = youWinTitle
         youWinLabel.textColor = .white
-        youWinLabel.font = .getInter700(size: 26)
+        youWinLabel.font = .getOpenSans700(size: 26)
         
-        congratulationLabel.text = "Congratulations!"
+        congratulationLabel.text = congratulationsTitle
         congratulationLabel.textColor = .white
-        congratulationLabel.font = .getInter700(size: 22)
+        congratulationLabel.font = .getOpenSans700(size: 22)
         
         youWinStack.addArrangedSubview(playMoreButton)
     }

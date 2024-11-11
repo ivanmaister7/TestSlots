@@ -13,7 +13,9 @@ extension SlotsViewController: SlotMachineSceneDelegate {
         slotsGameEngine.makeBalanceChangesAfterGame()
         footerView.reloadFooter()
         footerView.toggleDisableButtons()
-#warning("if win show alert")
+        if let win = StorageManager.defaults.getLastWin(), win > 1 {
+            present(YouWinAlertViewController(bg: .youWinBgSlots), animated: false)
+        }
     }
     
     func getCurrentKeysPositions() -> [[ElementKey]] {

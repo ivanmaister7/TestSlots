@@ -13,7 +13,10 @@ extension RouletteViewController: RouletteSceneDelegate {
         rouletteGameEngine.makeBalanceChangesAfterGame()
         footerView.reloadFooter()
         footerView.toggleDisableButtons()
-#warning("if win show alert")
+        
+        if let win = StorageManager.defaults.getLastWin(), win > 1 {
+            present(YouWinAlertViewController(bg: .youWinBgRoulette), animated: false)
+        }
     }
     
     func getFinalAngle() -> Angle {

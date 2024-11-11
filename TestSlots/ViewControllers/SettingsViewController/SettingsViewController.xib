@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="TestSlots" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsStack" destination="9Yl-GU-mcN" id="fVm-Zd-Y0n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsBg" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-B2-Ucm">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Yl-GU-mcN">
+                    <rect key="frame" x="264" y="59" width="324" height="275"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8c0-B2-Ucm" secondAttribute="trailing" id="4Xm-xK-oTe"/>
+                <constraint firstItem="8c0-B2-Ucm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4rE-4P-v4j"/>
+                <constraint firstItem="8c0-B2-Ucm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AAJ-pg-ncx"/>
+                <constraint firstItem="9Yl-GU-mcN" firstAttribute="width" secondItem="8c0-B2-Ucm" secondAttribute="width" multiplier="0.38" id="buX-4b-mN8"/>
+                <constraint firstAttribute="bottom" secondItem="8c0-B2-Ucm" secondAttribute="bottom" id="cqE-eq-17a"/>
+                <constraint firstItem="9Yl-GU-mcN" firstAttribute="height" secondItem="8c0-B2-Ucm" secondAttribute="height" multiplier="0.7" id="iTD-in-Bok"/>
+                <constraint firstItem="9Yl-GU-mcN" firstAttribute="centerY" secondItem="8c0-B2-Ucm" secondAttribute="centerY" id="idk-NV-KOn"/>
+                <constraint firstItem="9Yl-GU-mcN" firstAttribute="centerX" secondItem="8c0-B2-Ucm" secondAttribute="centerX" id="ml4-xK-ebU"/>
+            </constraints>
+            <point key="canvasLocation" x="8" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SettingsBg" width="1688" height="780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

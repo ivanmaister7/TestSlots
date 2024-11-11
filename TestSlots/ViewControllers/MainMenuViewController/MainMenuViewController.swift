@@ -39,7 +39,7 @@ class MainMenuViewController: UIViewController {
             MenuGameViewModel(gameName: "Plinko",
                               gameIcon: .gamePlinkoIcon,
                               onClickAction: { [weak self] in
-                                  self?.navigationController?.pushViewController(UIViewController(), animated: true)
+                                  self?.navigationController?.pushViewController(PlinkoViewController(), animated: true)
                               })
         ]
     }

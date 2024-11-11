@@ -26,7 +26,6 @@ class RouletteGameEngine: MiniGameEngine {
     }
     
     func getFinalConfiguration() -> Angle {
-        print("Key - \(gameAngleKey), Win - \(Model.defaultWinningMap[gameAngleKey] ?? 0.0) Angle - \(Model.defaultAngleMap[gameAngleKey] ?? 0.0)")
         return Model.defaultAngleMap[gameAngleKey] ?? 0.0
     }
 }

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2601E22CDE706900BE6C33 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601E02CDE706900BE6C33 /* SettingsViewController.swift */; };
+		2C2601E32CDE706900BE6C33 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2601E12CDE706900BE6C33 /* SettingsViewController.xib */; };
+		2C2601E52CDE74F400BE6C33 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601E42CDE74F400BE6C33 /* StringExtension.swift */; };
+		2C2601E92CDEA56900BE6C33 /* PlinkoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601E72CDEA56900BE6C33 /* PlinkoViewController.swift */; };
+		2C2601EA2CDEA56900BE6C33 /* PlinkoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2601E82CDEA56900BE6C33 /* PlinkoViewController.xib */; };
+		2C2601ED2CDEA59100BE6C33 /* PlinkoViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601EC2CDEA59100BE6C33 /* PlinkoViewControllerExtension.swift */; };
+		2C2601EF2CE2218900BE6C33 /* PlinkoGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601EE2CE2218900BE6C33 /* PlinkoGameEngine.swift */; };
+		2C2601F22CE221DB00BE6C33 /* PlinkoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601F12CE221DB00BE6C33 /* PlinkoModel.swift */; };
+		2C2601F42CE2229D00BE6C33 /* PlinkoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601F32CE2229D00BE6C33 /* PlinkoScene.swift */; };
+		2C2601F62CE222A500BE6C33 /* PlinkoSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601F52CE222A500BE6C33 /* PlinkoSceneDelegate.swift */; };
+		2C2601F82CE2248600BE6C33 /* PlinkoCollisionBitMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601F72CE2248600BE6C33 /* PlinkoCollisionBitMask.swift */; };
 		2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */; };
 		2C317C0C2CDAD7FE002E58B9 /* MenuGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C0B2CDAD7FE002E58B9 /* MenuGameView.swift */; };
 		2C317C0F2CDAD875002E58B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C317C0E2CDAD875002E58B9 /* SnapKit */; };
@@ -42,6 +53,8 @@
 		2C317C562CDE2561002E58B9 /* RouletteGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */; };
 		2C317C582CDE25A8002E58B9 /* RouletteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C572CDE25A8002E58B9 /* RouletteModel.swift */; };
 		2C317C5A2CDE2A9F002E58B9 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */; };
+		2C317C5E2CDE53DA002E58B9 /* YouWinAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C317C5D2CDE53DA002E58B9 /* YouWinAlertViewController.xib */; };
+		2C317C5F2CDE53DA002E58B9 /* YouWinAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C317C5C2CDE53DA002E58B9 /* YouWinAlertViewController.swift */; };
 		2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */; };
 		2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3CEA402CDA3E3E0031F4EB /* LaunchScreen.storyboard */; };
 		2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */; };
@@ -55,6 +68,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2601E02CDE706900BE6C33 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2C2601E12CDE706900BE6C33 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		2C2601E42CDE74F400BE6C33 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2C2601E72CDEA56900BE6C33 /* PlinkoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoViewController.swift; sourceTree = "<group>"; };
+		2C2601E82CDEA56900BE6C33 /* PlinkoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlinkoViewController.xib; sourceTree = "<group>"; };
+		2C2601EC2CDEA59100BE6C33 /* PlinkoViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoViewControllerExtension.swift; sourceTree = "<group>"; };
+		2C2601EE2CE2218900BE6C33 /* PlinkoGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoGameEngine.swift; sourceTree = "<group>"; };
+		2C2601F12CE221DB00BE6C33 /* PlinkoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoModel.swift; sourceTree = "<group>"; };
+		2C2601F32CE2229D00BE6C33 /* PlinkoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoScene.swift; sourceTree = "<group>"; };
+		2C2601F52CE222A500BE6C33 /* PlinkoSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoSceneDelegate.swift; sourceTree = "<group>"; };
+		2C2601F72CE2248600BE6C33 /* PlinkoCollisionBitMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoCollisionBitMask.swift; sourceTree = "<group>"; };
 		2C317C072CDAC6E8002E58B9 /* UICustomGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomGreenButton.swift; sourceTree = "<group>"; };
 		2C317C0B2CDAD7FE002E58B9 /* MenuGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGameView.swift; sourceTree = "<group>"; };
 		2C317C102CDAE218002E58B9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -89,6 +113,8 @@
 		2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteGameEngine.swift; sourceTree = "<group>"; };
 		2C317C572CDE25A8002E58B9 /* RouletteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteModel.swift; sourceTree = "<group>"; };
 		2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		2C317C5C2CDE53DA002E58B9 /* YouWinAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouWinAlertViewController.swift; sourceTree = "<group>"; };
+		2C317C5D2CDE53DA002E58B9 /* YouWinAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouWinAlertViewController.xib; sourceTree = "<group>"; };
 		2C3CEA242CD981DF0031F4EB /* TestSlots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSlots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3CEA3C2CDA3E3E0031F4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C3CEA3D2CDA3E3E0031F4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +141,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2601DF2CDE705300BE6C33 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C2601E02CDE706900BE6C33 /* SettingsViewController.swift */,
+				2C2601E12CDE706900BE6C33 /* SettingsViewController.xib */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		2C2601E62CDEA54D00BE6C33 /* Plinko */ = {
+			isa = PBXGroup;
+			children = (
+				2C2601EB2CDEA57500BE6C33 /* PlinkoViewController */,
+				2C2601F02CE221CB00BE6C33 /* PlinkoScene */,
+			);
+			path = Plinko;
+			sourceTree = "<group>";
+		};
+		2C2601EB2CDEA57500BE6C33 /* PlinkoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C2601EC2CDEA59100BE6C33 /* PlinkoViewControllerExtension.swift */,
+				2C2601E72CDEA56900BE6C33 /* PlinkoViewController.swift */,
+				2C2601E82CDEA56900BE6C33 /* PlinkoViewController.xib */,
+			);
+			path = PlinkoViewController;
+			sourceTree = "<group>";
+		};
+		2C2601F02CE221CB00BE6C33 /* PlinkoScene */ = {
+			isa = PBXGroup;
+			children = (
+				2C2601F12CE221DB00BE6C33 /* PlinkoModel.swift */,
+				2C2601F32CE2229D00BE6C33 /* PlinkoScene.swift */,
+				2C2601F52CE222A500BE6C33 /* PlinkoSceneDelegate.swift */,
+				2C2601F72CE2248600BE6C33 /* PlinkoCollisionBitMask.swift */,
+			);
+			path = PlinkoScene;
+			sourceTree = "<group>";
+		};
 		2C317C052CDAC66B002E58B9 /* UICustomElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +236,7 @@
 				2C317C362CDD810D002E58B9 /* MiniGameEngine.swift */,
 				2C317C282CDCCCEE002E58B9 /* SlotsGameEngine.swift */,
 				2C317C552CDE2561002E58B9 /* RouletteGameEngine.swift */,
+				2C2601EE2CE2218900BE6C33 /* PlinkoGameEngine.swift */,
 			);
 			path = MiniGameEngine;
 			sourceTree = "<group>";
@@ -178,8 +244,8 @@
 		2C317C3E2CDD8CBB002E58B9 /* Slots */ = {
 			isa = PBXGroup;
 			children = (
-				2C317C3F2CDD8D97002E58B9 /* SlotMachineScene */,
 				2C317C1D2CDC13DE002E58B9 /* SlotsViewController */,
+				2C317C3F2CDD8D97002E58B9 /* SlotMachineScene */,
 			);
 			path = Slots;
 			sourceTree = "<group>";
@@ -222,6 +288,15 @@
 				2C317C502CDE2394002E58B9 /* RouletteViewController.xib */,
 			);
 			path = RouletteViewController;
+			sourceTree = "<group>";
+		};
+		2C317C5B2CDE53BE002E58B9 /* YouWinAlert */ = {
+			isa = PBXGroup;
+			children = (
+				2C317C5C2CDE53DA002E58B9 /* YouWinAlertViewController.swift */,
+				2C317C5D2CDE53DA002E58B9 /* YouWinAlertViewController.xib */,
+			);
+			path = YouWinAlert;
 			sourceTree = "<group>";
 		};
 		2C3CEA1B2CD981DF0031F4EB = {
@@ -276,8 +351,11 @@
 		2C3CEA532CDA43230031F4EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C317C5B2CDE53BE002E58B9 /* YouWinAlert */,
+				2C2601E62CDEA54D00BE6C33 /* Plinko */,
 				2C317C482CDE148D002E58B9 /* Roulette */,
 				2C317C3E2CDD8CBB002E58B9 /* Slots */,
+				2C2601DF2CDE705300BE6C33 /* SettingsViewController */,
 				2C3CEA5D2CDAC5860031F4EB /* MainMenuViewController */,
 				2C3CEA542CDA432F0031F4EB /* LoadingViewController */,
 			);
@@ -302,6 +380,7 @@
 				2C317C1B2CDC0E96002E58B9 /* UIViewControllerExtension.swift */,
 				2C317C2B2CDCDCEA002E58B9 /* ArrayExtension.swift */,
 				2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */,
+				2C2601E42CDE74F400BE6C33 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,12 +471,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C317C5E2CDE53DA002E58B9 /* YouWinAlertViewController.xib in Resources */,
 				2C317C132CDAE2A5002E58B9 /* Suranna-Regular.ttf in Resources */,
 				2C3CEA5C2CDA4A690031F4EB /* Judson-Bold.ttf in Resources */,
 				2C3CEA462CDA3E3E0031F4EB /* Assets.xcassets in Resources */,
 				2C317C302CDCF71C002E58B9 /* KohSantepheap-Bold.ttf in Resources */,
+				2C2601EA2CDEA56900BE6C33 /* PlinkoViewController.xib in Resources */,
 				2C317C512CDE2394002E58B9 /* RouletteViewController.xib in Resources */,
 				2C317C152CDAE699002E58B9 /* Inter-Bold.ttf in Resources */,
+				2C2601E32CDE706900BE6C33 /* SettingsViewController.xib in Resources */,
 				2C317C202CDC13F8002E58B9 /* SlotsViewController.xib in Resources */,
 				2C3CEA482CDA3E3E0031F4EB /* LaunchScreen.storyboard in Resources */,
 				2C3CEA602CDAC5A30031F4EB /* MainMenuViewController.xib in Resources */,
@@ -415,6 +497,8 @@
 				2C317C0C2CDAD7FE002E58B9 /* MenuGameView.swift in Sources */,
 				2C317C1A2CDB62EF002E58B9 /* MenuGameViewModel.swift in Sources */,
 				2C317C542CDE23AA002E58B9 /* RouletteViewControllerExtension.swift in Sources */,
+				2C2601E92CDEA56900BE6C33 /* PlinkoViewController.swift in Sources */,
+				2C2601E52CDE74F400BE6C33 /* StringExtension.swift in Sources */,
 				2C317C522CDE2394002E58B9 /* RouletteViewController.swift in Sources */,
 				2C317C392CDD8483002E58B9 /* SlotsViewControllerExtension.swift in Sources */,
 				2C317C2E2CDCEB87002E58B9 /* UIBalanceLabel.swift in Sources */,
@@ -427,9 +511,11 @@
 				2C3CEA612CDAC5A30031F4EB /* MainMenuViewController.swift in Sources */,
 				2C317C342CDCFCB1002E58B9 /* UIBetView.swift in Sources */,
 				2C317C3B2CDD856F002E58B9 /* UIFooterSpinDelegate.swift in Sources */,
+				2C2601ED2CDEA59100BE6C33 /* PlinkoViewControllerExtension.swift in Sources */,
 				2C317C212CDC13F8002E58B9 /* SlotsViewController.swift in Sources */,
 				2C317C4D2CDE162B002E58B9 /* RouletteSceneDelegate.swift in Sources */,
 				2C317C242CDC18ED002E58B9 /* UIFooterBetAndSpinView.swift in Sources */,
+				2C2601F82CE2248600BE6C33 /* PlinkoCollisionBitMask.swift in Sources */,
 				2C317C5A2CDE2A9F002E58B9 /* DoubleExtension.swift in Sources */,
 				2C317C322CDCF857002E58B9 /* UITwoRowLabel.swift in Sources */,
 				2C317C3D2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift in Sources */,
@@ -437,8 +523,11 @@
 				2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */,
 				2C3CEA4B2CDA3E3E0031F4EB /* SceneDelegate.swift in Sources */,
 				2C317C172CDB60CE002E58B9 /* CALayerExtension.swift in Sources */,
+				2C317C5F2CDE53DA002E58B9 /* YouWinAlertViewController.swift in Sources */,
+				2C2601F42CE2229D00BE6C33 /* PlinkoScene.swift in Sources */,
 				2C317C562CDE2561002E58B9 /* RouletteGameEngine.swift in Sources */,
 				2C317C4B2CDE14B2002E58B9 /* RouletteScene.swift in Sources */,
+				2C2601F22CE221DB00BE6C33 /* PlinkoModel.swift in Sources */,
 				2C317C2C2CDCDCEA002E58B9 /* ArrayExtension.swift in Sources */,
 				2C3CEA592CDA48D70031F4EB /* UIFontExtension.swift in Sources */,
 				2C317C452CDD8E16002E58B9 /* SlotsModel.swift in Sources */,
@@ -446,6 +535,9 @@
 				2C3CEA502CDA41D40031F4EB /* LoadingViewController.swift in Sources */,
 				2C317C412CDD8DB9002E58B9 /* SlotMachineScene.swift in Sources */,
 				2C317C292CDCCCEE002E58B9 /* SlotsGameEngine.swift in Sources */,
+				2C2601EF2CE2218900BE6C33 /* PlinkoGameEngine.swift in Sources */,
+				2C2601F62CE222A500BE6C33 /* PlinkoSceneDelegate.swift in Sources */,
+				2C2601E22CDE706900BE6C33 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

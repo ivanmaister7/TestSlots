@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlinkoViewController" customModule="TestSlots" customModuleProvider="target">
+            <connections>
+                <outlet property="footerView" destination="sX6-EC-DMw" id="9Ea-hn-8tg"/>
+                <outlet property="plinkoGameView" destination="R8s-PQ-Rqt" id="1jx-pm-DS8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlinkoBg" translatesAutoresizingMaskIntoConstraints="NO" id="IVl-ou-pWP">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlinkoIconBg" translatesAutoresizingMaskIntoConstraints="NO" id="Xcd-XX-iOw" userLabel="PlinkoIconBg">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBgV2" translatesAutoresizingMaskIntoConstraints="NO" id="xRd-pE-uiN">
+                    <rect key="frame" x="0.0" y="241" width="852" height="152"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xRd-pE-uiN" secondAttribute="height" multiplier="213:38" id="fvz-xN-Woe"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-EC-DMw" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlinkoGameBg" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-GG-zvU" userLabel="PlinkoGameBg">
+                    <rect key="frame" x="264" y="13" width="324" height="346"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-PQ-Rqt">
+                    <rect key="frame" x="264" y="13" width="324" height="346"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xcd-XX-iOw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2wY-sw-THC"/>
+                <constraint firstItem="R8s-PQ-Rqt" firstAttribute="width" secondItem="sX6-EC-DMw" secondAttribute="width" multiplier="0.38" id="65d-TW-pLM"/>
+                <constraint firstItem="IVl-ou-pWP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Vd-UE-QNr"/>
+                <constraint firstItem="IVl-ou-pWP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BYD-sq-Wfk"/>
+                <constraint firstItem="xRd-pE-uiN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QHk-98-sJL"/>
+                <constraint firstItem="IVl-ou-pWP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SZJ-7T-NN8"/>
+                <constraint firstItem="R8s-PQ-Rqt" firstAttribute="height" secondItem="sX6-EC-DMw" secondAttribute="height" multiplier="0.88" id="SdX-do-KYL"/>
+                <constraint firstItem="sX6-EC-DMw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sw2-c0-GzS"/>
+                <constraint firstItem="Xcd-XX-iOw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zwt-mg-ASQ"/>
+                <constraint firstItem="AMu-GG-zvU" firstAttribute="height" secondItem="R8s-PQ-Rqt" secondAttribute="height" id="dky-rJ-ucq"/>
+                <constraint firstAttribute="bottom" secondItem="sX6-EC-DMw" secondAttribute="bottom" id="h0W-jH-16b"/>
+                <constraint firstAttribute="trailing" secondItem="IVl-ou-pWP" secondAttribute="trailing" id="kvN-n0-u07"/>
+                <constraint firstItem="AMu-GG-zvU" firstAttribute="width" secondItem="R8s-PQ-Rqt" secondAttribute="width" id="ngN-mq-Fpj"/>
+                <constraint firstItem="R8s-PQ-Rqt" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="og3-31-i91"/>
+                <constraint firstItem="AMu-GG-zvU" firstAttribute="centerX" secondItem="R8s-PQ-Rqt" secondAttribute="centerX" id="q7C-aQ-t98"/>
+                <constraint firstItem="sX6-EC-DMw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qUi-Sq-gm2"/>
+                <constraint firstAttribute="bottom" secondItem="xRd-pE-uiN" secondAttribute="bottom" id="qvD-iP-hta"/>
+                <constraint firstAttribute="trailing" secondItem="Xcd-XX-iOw" secondAttribute="trailing" id="sZG-Ri-KY4"/>
+                <constraint firstAttribute="bottom" secondItem="Xcd-XX-iOw" secondAttribute="bottom" id="uoA-JS-gU0"/>
+                <constraint firstAttribute="trailing" secondItem="sX6-EC-DMw" secondAttribute="trailing" id="w58-LQ-JK8"/>
+                <constraint firstItem="R8s-PQ-Rqt" firstAttribute="centerX" secondItem="sX6-EC-DMw" secondAttribute="centerX" id="wkG-bV-3YQ"/>
+                <constraint firstAttribute="bottom" secondItem="IVl-ou-pWP" secondAttribute="bottom" id="wtJ-ez-ks0"/>
+                <constraint firstAttribute="trailing" secondItem="xRd-pE-uiN" secondAttribute="trailing" id="yia-UL-gRB"/>
+                <constraint firstItem="AMu-GG-zvU" firstAttribute="centerY" secondItem="R8s-PQ-Rqt" secondAttribute="centerY" id="zKv-Wm-EtM"/>
+            </constraints>
+            <point key="canvasLocation" x="108.45070422535211" y="19.083969465648853"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FooterBgV2" width="1688" height="300"/>
+        <image name="PlinkoBg" width="1688" height="780"/>
+        <image name="PlinkoGameBg" width="624" height="665"/>
+        <image name="PlinkoIconBg" width="1148" height="497"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

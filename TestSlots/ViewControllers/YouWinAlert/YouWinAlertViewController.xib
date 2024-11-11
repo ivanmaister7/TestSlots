@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YouWinAlertViewController" customModule="TestSlots" customModuleProvider="target">
+            <connections>
+                <outlet property="alertBackground" destination="TSG-td-tYc" id="Bf3-6v-hc1"/>
+                <outlet property="congratulationLabel" destination="sKB-Zn-oy0" id="zlY-jt-erp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="youWinLabel" destination="G1f-CY-Mbj" id="QBy-S3-hoE"/>
+                <outlet property="youWinStack" destination="Mv9-qj-Knv" id="URG-JY-1rl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouWinBg" translatesAutoresizingMaskIntoConstraints="NO" id="v8g-iT-KyB">
+                    <rect key="frame" x="-12" y="-12" width="876" height="417"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEO-Y2-aAS" userLabel="WinMainView">
+                    <rect key="frame" x="259.33333333333337" y="29.666666666666657" width="333.33333333333337" height="333.66666666666674"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSG-td-tYc">
+                            <rect key="frame" x="0.0" y="0.0" width="333.33333333333331" height="333.66666666666669"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Mv9-qj-Knv">
+                            <rect key="frame" x="50.000000000000014" y="24" width="233.33333333333337" height="285.66666666666669"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-CY-Mbj">
+                                    <rect key="frame" x="0.0" y="0.0" width="233.33333333333334" height="87.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKB-Zn-oy0">
+                                    <rect key="frame" x="0.0" y="99.333333333333343" width="233.33333333333334" height="87"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouWinCoins" translatesAutoresizingMaskIntoConstraints="NO" id="f29-Yf-9hc">
+                                    <rect key="frame" x="0.0" y="198.33333333333334" width="233.33333333333334" height="87.333333333333343"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Mv9-qj-Knv" firstAttribute="centerX" secondItem="TSG-td-tYc" secondAttribute="centerX" id="4aC-r4-SGG"/>
+                        <constraint firstItem="TSG-td-tYc" firstAttribute="leading" secondItem="ZEO-Y2-aAS" secondAttribute="leading" id="8sI-Bn-4yG"/>
+                        <constraint firstAttribute="bottom" secondItem="Mv9-qj-Knv" secondAttribute="bottom" constant="24" id="BEw-Za-ZMv"/>
+                        <constraint firstAttribute="trailing" secondItem="TSG-td-tYc" secondAttribute="trailing" id="Jvz-RZ-W8l"/>
+                        <constraint firstItem="Mv9-qj-Knv" firstAttribute="width" secondItem="TSG-td-tYc" secondAttribute="width" multiplier="0.7" id="ebP-ct-6qI"/>
+                        <constraint firstAttribute="bottom" secondItem="TSG-td-tYc" secondAttribute="bottom" id="mzd-tI-6qh"/>
+                        <constraint firstItem="TSG-td-tYc" firstAttribute="top" secondItem="ZEO-Y2-aAS" secondAttribute="top" id="o6H-nV-Eam"/>
+                        <constraint firstItem="Mv9-qj-Knv" firstAttribute="top" secondItem="ZEO-Y2-aAS" secondAttribute="top" constant="24" id="rlu-06-qCb"/>
+                        <constraint firstAttribute="width" secondItem="ZEO-Y2-aAS" secondAttribute="height" multiplier="1:1" id="sVg-if-ro6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="v8g-iT-KyB" secondAttribute="bottom" constant="-12" id="GcP-fJ-Dwg"/>
+                <constraint firstItem="ZEO-Y2-aAS" firstAttribute="centerY" secondItem="v8g-iT-KyB" secondAttribute="centerY" id="IeG-u5-DNn"/>
+                <constraint firstAttribute="trailing" secondItem="v8g-iT-KyB" secondAttribute="trailing" constant="-12" id="d3e-Cu-0O9"/>
+                <constraint firstItem="v8g-iT-KyB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-12" id="ff6-v7-wax"/>
+                <constraint firstItem="ZEO-Y2-aAS" firstAttribute="centerX" secondItem="v8g-iT-KyB" secondAttribute="centerX" id="gDg-2h-kec"/>
+                <constraint firstItem="ZEO-Y2-aAS" firstAttribute="height" secondItem="v8g-iT-KyB" secondAttribute="height" multiplier="0.8" id="pBI-lx-ctC"/>
+                <constraint firstItem="v8g-iT-KyB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-12" id="ztF-ZJ-qfE"/>
+            </constraints>
+            <point key="canvasLocation" x="72.535211267605632" y="19.083969465648853"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="YouWinBg" width="1063" height="500"/>
+        <image name="YouWinCoins" width="271" height="126"/>
+    </resources>
+</document>

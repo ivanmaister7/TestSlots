@@ -13,6 +13,8 @@ class SlotsViewController: UIViewController {
     @IBOutlet weak var slotsGameView: UIView!
     @IBOutlet weak var footerView: UIFooterBetAndSpinView!
     
+    let skView = SKView()
+    
     private static let configuration: SlotMachineSceneConfiguration = .init()
     
     private(set) var slotMachineScene: SlotMachineScene?
@@ -24,13 +26,15 @@ class SlotsViewController: UIViewController {
         self.addBackButton()
         self.addSettingsButton()
         
-        self.addSlotsScene()
-        
         footerView.spinDelegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         footerView.gameType = .slots
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.addSlotsScene()
     }
     
     private func addSlotsScene() {
@@ -41,7 +45,7 @@ class SlotsViewController: UIViewController {
         let scene = SlotMachineScene(size: slotsGameView.frame.size)
         scene.slotsDelegate = self
         scene.configuration = Self.configuration
-        scene.scaleMode = .resizeFill
+        scene.scaleMode = .fill
         skView.presentScene(scene)
         
         self.slotMachineScene = scene

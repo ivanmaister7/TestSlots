@@ -21,8 +21,6 @@ class RouletteViewController: UIViewController {
         self.addBackButton()
         self.addSettingsButton()
         
-        self.addSlotsScene()
-        
         footerView.spinDelegate = self
     }
     
@@ -30,7 +28,11 @@ class RouletteViewController: UIViewController {
         footerView.gameType = .roulette
     }
     
-    private func addSlotsScene() {
+    override func viewDidLayoutSubviews() {
+        self.addRouletteScene()
+    }
+    
+    private func addRouletteScene() {
         let skView = SKView(frame: rouletteGameView.frame)
         skView.backgroundColor = .clear
         view.addSubview(skView)
@@ -42,5 +44,4 @@ class RouletteViewController: UIViewController {
         
         self.rouletteScene = scene
     }
-
 }

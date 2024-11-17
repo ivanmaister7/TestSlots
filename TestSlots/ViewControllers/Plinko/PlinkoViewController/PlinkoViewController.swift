@@ -21,9 +21,16 @@ class PlinkoViewController: UIViewController {
         self.addSettingsButton()
         self.addBackButton()
         
-        self.addPlinkoScene()
-        
         footerView.spinDelegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        footerView.uiType = .version2
+        footerView.gameType = .plinko
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.addPlinkoScene()
     }
     
     private func addPlinkoScene() {
@@ -37,10 +44,5 @@ class PlinkoViewController: UIViewController {
         skView.presentScene(scene)
         
         self.plinkoScene = scene
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        footerView.uiType = .version2
-        footerView.gameType = .plinko
     }
 }

@@ -37,7 +37,7 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
                 let peg = SKSpriteNode(imageNamed: "smallBall")
                 peg.size = pegSize
                 peg.position = CGPoint(
-                    x: size.width / 2 + CGFloat(col - pegsInRow / 2) * spacingX + (row % 2 == 0 ? 0 : spacingX / 2) + 8,
+                    x: size.width / 2 + CGFloat(col - pegsInRow / 2) * spacingX + (row % 2 == 0 ? 0 : spacingX / 2),
                     y: size.height * 0.82 - CGFloat(row) * spacingY
                 )
                 
@@ -59,7 +59,7 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
         for i in 0..<rows {
             let bucket = SKSpriteNode(imageNamed: bucketImages[i] ?? "bucket1")
             bucket.size = bucketSize
-            bucket.position = CGPoint(x: bucketSpacing * CGFloat(i + 5) + bucketWidth * CGFloat(i),
+            bucket.position = CGPoint(x: bucketSpacing * CGFloat(i + 4) + bucketWidth * CGFloat(i),
                                       y: bucketSpacing * 2)
             bucket.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: bucketWidth, height: 20))
             bucket.physicsBody?.isDynamic = false

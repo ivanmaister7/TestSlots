@@ -29,12 +29,12 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBg" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-N4-oHd">
                     <rect key="frame" x="0.0" y="326.33333333333331" width="852" height="66.666666666666686"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAm-ux-vBH" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
-                    <rect key="frame" x="59" y="326.33333333333331" width="734" height="45.666666666666686"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRu-OR-aae">
                     <rect key="frame" x="204.33333333333334" y="50" width="443.33333333333326" height="276.33333333333331"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAm-ux-vBH" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
+                    <rect key="frame" x="59" y="326.33333333333331" width="734" height="45.666666666666686"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>

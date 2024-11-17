@@ -32,15 +32,15 @@
                         <constraint firstAttribute="width" secondItem="xRd-pE-uiN" secondAttribute="height" multiplier="213:38" id="fvz-xN-Woe"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-EC-DMw" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlinkoGameBg" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-GG-zvU" userLabel="PlinkoGameBg">
                     <rect key="frame" x="264" y="13" width="324" height="346"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-PQ-Rqt">
                     <rect key="frame" x="264" y="13" width="324" height="346"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-EC-DMw" customClass="UIFooterBetAndSpinView" customModule="TestSlots" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>

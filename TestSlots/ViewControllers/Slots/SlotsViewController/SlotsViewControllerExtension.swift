@@ -29,4 +29,8 @@ extension SlotsViewController: UIFooterSpinDelegate {
         slotMachineScene?.spinSlots()
         footerView.reloadFooter()
     }
+    
+    func onEmptyBalance() {
+        present(YouWinAlertViewController(bg: .youWinBgSlots, type: .lose), animated: false)
+    }
 }

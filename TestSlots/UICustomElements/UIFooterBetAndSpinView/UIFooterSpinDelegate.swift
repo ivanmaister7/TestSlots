@@ -9,4 +9,5 @@ import Foundation
 
 protocol UIFooterSpinDelegate: AnyObject {
     func onSpinAction()
+    func onEmptyBalance()
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0D93312CEA286F001CDBB3 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D93302CEA286F001CDBB3 /* Notification.swift */; };
+		2C0D93332CEA2B0B001CDBB3 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D93322CEA2B0B001CDBB3 /* UIResponder.swift */; };
 		2C2601E22CDE706900BE6C33 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601E02CDE706900BE6C33 /* SettingsViewController.swift */; };
 		2C2601E32CDE706900BE6C33 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2601E12CDE706900BE6C33 /* SettingsViewController.xib */; };
 		2C2601E52CDE74F400BE6C33 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2601E42CDE74F400BE6C33 /* StringExtension.swift */; };
@@ -71,6 +73,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0D93302CEA286F001CDBB3 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2C0D93322CEA2B0B001CDBB3 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		2C2601E02CDE706900BE6C33 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2C2601E12CDE706900BE6C33 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		2C2601E42CDE74F400BE6C33 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -397,6 +401,8 @@
 				2C317C2B2CDCDCEA002E58B9 /* ArrayExtension.swift */,
 				2C317C592CDE2A9F002E58B9 /* DoubleExtension.swift */,
 				2C2601E42CDE74F400BE6C33 /* StringExtension.swift */,
+				2C0D93302CEA286F001CDBB3 /* Notification.swift */,
+				2C0D93322CEA2B0B001CDBB3 /* UIResponder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -523,6 +529,7 @@
 				2C317C2E2CDCEB87002E58B9 /* UIBalanceLabel.swift in Sources */,
 				2C317C472CDD8E2D002E58B9 /* SlotMachineSceneDelegate.swift in Sources */,
 				2C3CEA4A2CDA3E3E0031F4EB /* AppDelegate.swift in Sources */,
+				2C0D93332CEA2B0B001CDBB3 /* UIResponder.swift in Sources */,
 				2C317C582CDE25A8002E58B9 /* RouletteModel.swift in Sources */,
 				2C317C372CDD810D002E58B9 /* MiniGameEngine.swift in Sources */,
 				2C317C272CDCC946002E58B9 /* StorageManager.swift in Sources */,
@@ -539,6 +546,7 @@
 				2C317C322CDCF857002E58B9 /* UITwoRowLabel.swift in Sources */,
 				2C317C3D2CDD858D002E58B9 /* UIFooterBetAndSpinViewModel.swift in Sources */,
 				2C317C112CDAE218002E58B9 /* UIColorExtension.swift in Sources */,
+				2C0D93312CEA286F001CDBB3 /* Notification.swift in Sources */,
 				2C317C082CDAC6E8002E58B9 /* UICustomGreenButton.swift in Sources */,
 				2C3CEA4B2CDA3E3E0031F4EB /* SceneDelegate.swift in Sources */,
 				2C317C172CDB60CE002E58B9 /* CALayerExtension.swift in Sources */,

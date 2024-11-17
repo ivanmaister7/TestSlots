@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum YouWinAlertType {
+    case win, lose
+}
+
 class YouWinAlertViewController: UIViewController {
 
     @IBOutlet weak var alertBackground: UIImageView!
@@ -16,17 +20,25 @@ class YouWinAlertViewController: UIViewController {
     
     let youWinTitle = "You Win!"
     let congratulationsTitle = "Congratulations!"
+    let playMoreTitle = "play more"
     
-    var bg: ImageResource
+    let youLoseTitle = "Your balance is empty!"
+    let youLoseInstractionsTitle = "Please, restart the game!"
+    let restartGameTitle = "restart game"
+    
+    private var bg: ImageResource
+    private var type: YouWinAlertType
     
     lazy var playMoreButton: UICustomGreenButton = {
-        let button = UICustomGreenButton(text: "play more", image: .smallCornerButtonBg)
-        button.addTarget(self, action: #selector(self.backButtonTapped), for: .touchUpInside)
+        let button = UICustomGreenButton(text: type == .win ? playMoreTitle : restartGameTitle, image: .smallCornerButtonBg)
+        let selector: Selector = type == .win ? #selector(self.backButtonTapped) : #selector(self.restartGame)
+        button.addTarget(self, action: selector, for: .touchUpInside)
         return button
     }()
     
-    init(bg: ImageResource){
+    init(bg: ImageResource, type: YouWinAlertType = .win){
         self.bg = bg
+        self.type = type
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -40,11 +52,11 @@ class YouWinAlertViewController: UIViewController {
         
         alertBackground.image = UIImage(resource: bg)
         
-        youWinLabel.text = youWinTitle
+        youWinLabel.text = type == .win ? youWinTitle : youLoseTitle
         youWinLabel.textColor = .white
         youWinLabel.font = .getOpenSans700(size: 26)
         
-        congratulationLabel.text = congratulationsTitle
+        congratulationLabel.text = type == .win ? congratulationsTitle : youLoseInstractionsTitle
         congratulationLabel.textColor = .white
         congratulationLabel.font = .getOpenSans700(size: 22)
         

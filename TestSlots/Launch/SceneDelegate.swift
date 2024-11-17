@@ -18,12 +18,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let tabBarVC = LoadingViewController()
-        window?.rootViewController = tabBarVC
-        window?.makeKeyAndVisible()
+        NotificationCenter.default.addObserver(self, selector: #selector(restartGameNotification), name: .restartGame, object: nil)
+                
+        startGame()
         
         UIView.appearance().isMultipleTouchEnabled = false
         UIView.appearance().isExclusiveTouch = true
+    
+        
+    }
+    
+    private func startGame() {
+        let loadingViewController = LoadingViewController()
+        window?.rootViewController = loadingViewController
+        window?.makeKeyAndVisible()
+    }
+    
+    @objc private func restartGameNotification() {
+        restartGame()
+    }
+
+    func restartGame() {
+        DispatchQueue.main.async {
+            StorageManager.defaults.setInitialValues()
+            self.startGame()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -52,5 +71,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .restartGame, object: nil)
     }
 }

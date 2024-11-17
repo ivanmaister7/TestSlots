@@ -29,4 +29,8 @@ extension PlinkoViewController: UIFooterSpinDelegate {
         plinkoScene?.dropBall()
         footerView.reloadFooter()
     }
+    
+    func onEmptyBalance() {
+        present(YouWinAlertViewController(bg: .youWinBgPlinko, type: .lose), animated: false)
+    }
 }

@@ -8,6 +8,11 @@
 import Foundation
 
 class StorageManager {
+    private let initialBalance = 10_000
+    private let initialLastBet = 1_000
+    private let initialLastWin = 0
+    private let initialIsSoundOn = true
+    
     static let defaults = StorageManager()
     private let def: UserDefaults
     
@@ -15,10 +20,10 @@ class StorageManager {
         def = UserDefaults.standard
         
         //make initial values when first launch in game
-        if self.getBalance() == nil { saveBalance(value: 10_000) }
-        if self.getLastBet() == nil { saveLastBet(value: 1_000) }
-        if self.getLastWin() == nil { saveLastWin(value: 0) }
-        if self.getIsSoundOn() == nil { setValue(forKey: .isSoundOn, value: true) }
+        if self.getBalance() == nil { saveBalance(value: initialBalance) }
+        if self.getLastBet() == nil { saveLastBet(value: initialLastBet) }
+        if self.getLastWin() == nil { saveLastWin(value: initialLastWin) }
+        if self.getIsSoundOn() == nil { setValue(forKey: .isSoundOn, value: initialIsSoundOn) }
     }
     
     private func getValue(forKey key: StorageKeys) -> Any? {
@@ -27,6 +32,12 @@ class StorageManager {
     
     private func setValue(forKey key: StorageKeys, value: Any) {
         def.set(value, forKey: key.rawValue)
+    }
+    
+    func setInitialValues() {
+        saveBalance(value: initialBalance)
+        saveLastBet(value: initialLastBet)
+        saveLastWin(value: initialLastWin)
     }
     
     func saveBalance(value: Int) {

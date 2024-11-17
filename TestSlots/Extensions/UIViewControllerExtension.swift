@@ -89,4 +89,8 @@ extension UIViewController {
         dismiss(animated: true)
         navigationController?.popViewController(animated: true)
     }
+    
+    @objc func restartGame() {
+        NotificationCenter.default.post(name: .restartGame, object: nil)
+    }
 }

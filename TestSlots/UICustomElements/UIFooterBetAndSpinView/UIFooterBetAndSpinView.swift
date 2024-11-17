@@ -32,6 +32,7 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
     
     weak var spinDelegate: UIFooterSpinDelegate?
     var vm = UIFooterBetAndSpinViewModel()
+    
     var type: UIFooterBetAndSpinViewType = .version1 {
         didSet {
             setupView()
@@ -173,7 +174,11 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
     }
     
     @objc private func spinButtonTapped() {
-        self.spinDelegate?.onSpinAction()
-        self.toggleDisableButtons()
+        if vm.balance > 0 {
+            self.spinDelegate?.onSpinAction()
+            self.toggleDisableButtons()
+        } else {
+            self.spinDelegate?.onEmptyBalance()
+        }
     }
 }

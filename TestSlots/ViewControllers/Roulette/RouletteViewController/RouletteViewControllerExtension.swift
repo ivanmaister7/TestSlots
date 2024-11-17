@@ -30,4 +30,8 @@ extension RouletteViewController: UIFooterSpinDelegate {
         rouletteScene?.spinAction()
         footerView.reloadFooter()
     }
+    
+    func onEmptyBalance() {
+        present(YouWinAlertViewController(bg: .youWinBgRoulette, type: .lose), animated: false)
+    }
 }

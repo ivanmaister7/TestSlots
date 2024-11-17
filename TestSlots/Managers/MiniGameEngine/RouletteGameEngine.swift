@@ -21,11 +21,18 @@ class RouletteGameEngine: MiniGameEngine {
             //my custom winnig formula
             let winValue: Int = Int(winningMap[gameAngleKey] ?? 1)
             let win = winValue < 1000 ? bet * winValue : winValue
-            StorageManager.defaults.saveLastWin(value: win)
+            StorageManager.defaults.saveLastWinRoulette(value: win)
         }
     }
     
     func getFinalConfiguration() -> Angle {
         return Model.defaultAngleMap[gameAngleKey] ?? 0.0
+    }
+    
+    
+    func makeBalanceChangesAfterGame() {
+        guard let balance = StorageManager.defaults.getBalance(),
+              let win = StorageManager.defaults.getLastWin(.roulette) else { fatalError("Balance and Last Win are not available!") }
+        StorageManager.defaults.saveBalance(value: balance + win)
     }
 }

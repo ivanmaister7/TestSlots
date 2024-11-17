@@ -7,8 +7,12 @@
 
 import UIKit
 
-enum UIFooterBetAndSpinViewType {
+enum UIFooterBetAndSpinViewUIType {
     case version1, version2
+}
+
+enum UIFooterBetAndSpinViewGameType {
+    case slots, roulette, plinko
 }
 
 ////MARK: View Factory
@@ -33,7 +37,14 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
     weak var spinDelegate: UIFooterSpinDelegate?
     var vm = UIFooterBetAndSpinViewModel()
     
-    var type: UIFooterBetAndSpinViewType = .version1 {
+    var gameType: UIFooterBetAndSpinViewGameType = .slots {
+        didSet {
+            vm.gameType = gameType
+            reloadFooter()
+        }
+    }
+    
+    var uiType: UIFooterBetAndSpinViewUIType = .version1 {
         didSet {
             setupView()
         }
@@ -80,10 +91,10 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
         addSubview(betView)
         addSubview(winLabel)
         
-        if type == .version1 {
+        if uiType == .version1 {
             addSubview(maxBetButton)
             setupConstraintsVersion1()
-        } else if type == .version2 {
+        } else if uiType == .version2 {
             spinButton.setTitle(playTitle.uppercased(), for: .normal)
             setupConstraintsVersion2()
         }

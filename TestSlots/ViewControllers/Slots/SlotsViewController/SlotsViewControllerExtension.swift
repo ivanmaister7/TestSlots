@@ -13,7 +13,7 @@ extension SlotsViewController: SlotMachineSceneDelegate {
         slotsGameEngine.makeBalanceChangesAfterGame()
         footerView.reloadFooter()
         footerView.toggleDisableButtons()
-        if let win = StorageManager.defaults.getLastWin(), win > 1 {
+        if let win = StorageManager.defaults.getLastWin(.slots), win > 1 {
             present(YouWinAlertViewController(bg: .youWinBgSlots), animated: false)
         }
     }

@@ -35,10 +35,4 @@ extension MiniGameEngine {
               let bet = StorageManager.defaults.getLastBet() else { fatalError("Balance are not available!") }
         StorageManager.defaults.saveBalance(value: balance - bet)
     }
-    
-    func makeBalanceChangesAfterGame() {
-        guard let balance = StorageManager.defaults.getBalance(),
-              let win = StorageManager.defaults.getLastWin() else { fatalError("Balance and Last Win are not available!") }
-        StorageManager.defaults.saveBalance(value: balance + win)
-    }
 }

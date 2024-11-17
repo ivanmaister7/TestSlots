@@ -13,7 +13,7 @@ extension PlinkoViewController: PlinkoSceneDelegate {
         plinkoGameEngine.makeBalanceChangesAfterGame()
         footerView.reloadFooter()
         footerView.toggleDisableButtons()
-        if let win = StorageManager.defaults.getLastWin(), win > 1 {
+        if let win = StorageManager.defaults.getLastWin(.plinko), win > 1 {
             present(YouWinAlertViewController(bg: .youWinBgPlinko), animated: false)
         }
     }

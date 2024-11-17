@@ -26,6 +26,10 @@ class RouletteViewController: UIViewController {
         footerView.spinDelegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        footerView.gameType = .roulette
+    }
+    
     private func addSlotsScene() {
         let skView = SKView(frame: rouletteGameView.frame)
         skView.backgroundColor = .clear

@@ -41,9 +41,11 @@ class UIFooterBetAndSpinViewModel {
     var win: Int {
         set { }
         get {
-            StorageManager.defaults.getLastWin() ?? 0
+            StorageManager.defaults.getLastWin(gameType) ?? 0
         }
     }
+    
+    var gameType: UIFooterBetAndSpinViewGameType = .slots
     
     func setMaxBet() {
         bet = balance

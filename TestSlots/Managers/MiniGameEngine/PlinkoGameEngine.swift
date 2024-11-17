@@ -20,7 +20,7 @@ class PlinkoGameEngine: MiniGameEngine {
             //my custom winnig formula
             let winValue = winningMap[finalBucket] ?? 1
             let win = Double(bet) * winValue
-            StorageManager.defaults.saveLastWin(value: Int(win))
+            StorageManager.defaults.saveLastWinPlinko(value: Int(win))
         }
     }
     func setFinalBucket(_ bucket: Bucket) {
@@ -29,5 +29,12 @@ class PlinkoGameEngine: MiniGameEngine {
     
     func getFinalConfiguration() -> Bucket {
         finalBucket
+    }
+    
+    
+    func makeBalanceChangesAfterGame() {
+        guard let balance = StorageManager.defaults.getBalance(),
+              let win = StorageManager.defaults.getLastWin(.plinko) else { fatalError("Balance and Last Win are not available!") }
+        StorageManager.defaults.saveBalance(value: balance + win)
     }
 }

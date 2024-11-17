@@ -22,7 +22,9 @@ class StorageManager {
         //make initial values when first launch in game
         if self.getBalance() == nil { saveBalance(value: initialBalance) }
         if self.getLastBet() == nil { saveLastBet(value: initialLastBet) }
-        if self.getLastWin() == nil { saveLastWin(value: initialLastWin) }
+        if self.getLastWin(.slots) == nil { saveLastWinSlots(value: initialLastWin) }
+        if self.getLastWin(.roulette) == nil { saveLastWinRoulette(value: initialLastWin) }
+        if self.getLastWin(.plinko) == nil { saveLastWinPlinko(value: initialLastWin) }
         if self.getIsSoundOn() == nil { setValue(forKey: .isSoundOn, value: initialIsSoundOn) }
     }
     
@@ -37,7 +39,9 @@ class StorageManager {
     func setInitialValues() {
         saveBalance(value: initialBalance)
         saveLastBet(value: initialLastBet)
-        saveLastWin(value: initialLastWin)
+        saveLastWinSlots(value: initialLastWin)
+        saveLastWinRoulette(value: initialLastWin)
+        saveLastWinPlinko(value: initialLastWin)
     }
     
     func saveBalance(value: Int) {
@@ -56,12 +60,31 @@ class StorageManager {
         getValue(forKey: .lastBet) as? Int
     }
     
-    func saveLastWin(value: Int) {
-        setValue(forKey: .lastWin, value: value)
+    func saveLastWinSlots(value: Int) {
+        setValue(forKey: .lastWinSlots, value: value)
     }
     
-    func getLastWin() -> Int? {
-        getValue(forKey: .lastWin) as? Int
+    func saveLastWinRoulette(value: Int) {
+        setValue(forKey: .lastWinRoulette, value: value)
+    }
+    
+    func saveLastWinPlinko(value: Int) {
+        setValue(forKey: .lastWinPlinko, value: value)
+    }
+    
+    func getLastWin(_ gameType: UIFooterBetAndSpinViewGameType) -> Int? {
+        let key: StorageKeys = switch gameType {
+        case .slots:
+             .lastWinSlots
+        case .roulette:
+             .lastWinRoulette
+        case .plinko:
+             .lastWinPlinko
+        default:
+             .lastWinSlots
+        }
+        
+        return getValue(forKey: key) as? Int
     }
     
     func saveIsSoundOn(value: Bool) {
@@ -80,6 +103,8 @@ class StorageManager {
 enum StorageKeys: String {
     case balance
     case lastBet
-    case lastWin
+    case lastWinSlots
+    case lastWinRoulette
+    case lastWinPlinko
     case isSoundOn
 }

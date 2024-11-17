@@ -14,7 +14,7 @@ extension RouletteViewController: RouletteSceneDelegate {
         footerView.reloadFooter()
         footerView.toggleDisableButtons()
         
-        if let win = StorageManager.defaults.getLastWin(), win > 1 {
+        if let win = StorageManager.defaults.getLastWin(.roulette), win > 1 {
             present(YouWinAlertViewController(bg: .youWinBgRoulette), animated: false)
         }
     }

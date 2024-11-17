@@ -37,7 +37,7 @@ class SlotsGameEngine: MiniGameEngine {
         if let bet = StorageManager.defaults.getLastBet() {
             //my custom winnig formula
             let win = bet * Int((winningMap[mostFrequentElement] ?? 1.0)) * count / columns
-            StorageManager.defaults.saveLastWin(value: win)
+            StorageManager.defaults.saveLastWinSlots(value: win)
         }
     }
     
@@ -48,5 +48,12 @@ class SlotsGameEngine: MiniGameEngine {
                 self.gameMatrix[row][col] = winningMap.keys.randomElement() ?? 0
             }
         }
+    }
+    
+    
+    func makeBalanceChangesAfterGame() {
+        guard let balance = StorageManager.defaults.getBalance(),
+              let win = StorageManager.defaults.getLastWin(.slots) else { fatalError("Balance and Last Win are not available!") }
+        StorageManager.defaults.saveBalance(value: balance + win)
     }
 }

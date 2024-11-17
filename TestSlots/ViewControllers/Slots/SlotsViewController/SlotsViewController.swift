@@ -29,6 +29,10 @@ class SlotsViewController: UIViewController {
         footerView.spinDelegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        footerView.gameType = .slots
+    }
+    
     private func addSlotsScene() {
         let skView = SKView(frame: slotsGameView.frame)
         skView.backgroundColor = .clear

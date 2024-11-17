@@ -40,6 +40,7 @@ class PlinkoViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        footerView.type = .version2
+        footerView.uiType = .version2
+        footerView.gameType = .plinko
     }
 }

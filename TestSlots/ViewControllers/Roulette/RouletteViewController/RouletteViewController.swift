@@ -13,6 +13,8 @@ class RouletteViewController: UIViewController {
     @IBOutlet weak var rouletteGameView: UIView!
     @IBOutlet weak var footerView: UIFooterBetAndSpinView!
     
+    private var skView: SKView!
+    
     private(set) var rouletteScene: RouletteScene?
     private(set) var rouletteGameEngine = RouletteGameEngine()
     
@@ -33,7 +35,9 @@ class RouletteViewController: UIViewController {
     }
     
     private func addRouletteScene() {
-        let skView = SKView(frame: rouletteGameView.frame)
+        guard skView == nil else { return }
+        
+        skView = SKView(frame: rouletteGameView.frame)
         skView.backgroundColor = .clear
         view.addSubview(skView)
         

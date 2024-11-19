@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="326.33333333333331" width="852" height="66.666666666666686"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-Vu-dF2">
-                    <rect key="frame" x="223" y="-35" width="406" height="406.33333333333331"/>
+                    <rect key="frame" x="263" y="0.0" width="326" height="326.33333333333331"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Fod-Vu-dF2" secondAttribute="height" multiplier="1:1" id="fdD-sC-ABK"/>
@@ -43,7 +43,7 @@
             <constraints>
                 <constraint firstItem="Fod-Vu-dF2" firstAttribute="centerX" secondItem="fmd-k5-RZE" secondAttribute="centerX" id="0at-DU-Jjz"/>
                 <constraint firstAttribute="bottom" secondItem="fmd-k5-RZE" secondAttribute="bottom" id="8Nw-tz-vtO"/>
-                <constraint firstItem="Fod-Vu-dF2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-35" id="9u1-lZ-dbl"/>
+                <constraint firstItem="Fod-Vu-dF2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9u1-lZ-dbl"/>
                 <constraint firstItem="arQ-e5-HUY" firstAttribute="top" secondItem="wFv-dl-zAK" secondAttribute="top" id="BrQ-N6-eIi"/>
                 <constraint firstAttribute="trailing" secondItem="fmd-k5-RZE" secondAttribute="trailing" id="Lhq-OQ-iLI"/>
                 <constraint firstItem="wFv-dl-zAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OW2-y4-Hx6"/>
@@ -54,7 +54,7 @@
                 <constraint firstItem="fmd-k5-RZE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="loq-He-3iJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="arQ-e5-HUY" secondAttribute="bottom" id="m1t-67-wg0"/>
                 <constraint firstItem="wFv-dl-zAK" firstAttribute="height" secondItem="fmd-k5-RZE" secondAttribute="height" multiplier="0.17" id="mMs-Hn-NBd"/>
-                <constraint firstItem="wFv-dl-zAK" firstAttribute="top" secondItem="Fod-Vu-dF2" secondAttribute="bottom" constant="-45" id="pN6-aS-oHP"/>
+                <constraint firstItem="wFv-dl-zAK" firstAttribute="top" secondItem="Fod-Vu-dF2" secondAttribute="bottom" id="pN6-aS-oHP"/>
                 <constraint firstItem="fmd-k5-RZE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q3F-B0-d29"/>
             </constraints>
             <point key="canvasLocation" x="138" y="20"/>

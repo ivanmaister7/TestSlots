@@ -13,7 +13,7 @@ class SlotsViewController: UIViewController {
     @IBOutlet weak var slotsGameView: UIView!
     @IBOutlet weak var footerView: UIFooterBetAndSpinView!
     
-    let skView = SKView()
+    private var skView: SKView!
     
     private static let configuration: SlotMachineSceneConfiguration = .init()
     
@@ -38,7 +38,9 @@ class SlotsViewController: UIViewController {
     }
     
     private func addSlotsScene() {
-        let skView = SKView(frame: slotsGameView.frame)
+        guard skView == nil else { return }
+        
+        skView = SKView(frame: slotsGameView.frame)
         skView.backgroundColor = .clear
         view.addSubview(skView)
         
@@ -49,5 +51,6 @@ class SlotsViewController: UIViewController {
         skView.presentScene(scene)
         
         self.slotMachineScene = scene
+        
     }
 }

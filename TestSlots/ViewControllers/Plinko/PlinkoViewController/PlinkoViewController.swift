@@ -13,6 +13,8 @@ class PlinkoViewController: UIViewController {
     @IBOutlet weak var plinkoGameView: UIView!
     @IBOutlet weak var footerView: UIFooterBetAndSpinView!
     
+    private var skView: SKView!
+    
     private(set) var plinkoScene: PlinkoScene?
     private(set) var plinkoGameEngine = PlinkoGameEngine()
     
@@ -34,7 +36,9 @@ class PlinkoViewController: UIViewController {
     }
     
     private func addPlinkoScene() {
-        let skView = SKView(frame: plinkoGameView.frame)
+        guard skView == nil else { return }
+        
+        skView = SKView(frame: plinkoGameView.frame)
         skView.backgroundColor = .clear
         view.addSubview(skView)
         

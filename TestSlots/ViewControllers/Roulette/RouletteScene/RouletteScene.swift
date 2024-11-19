@@ -45,16 +45,14 @@ class RouletteScene: SKScene {
     
     func spinAction() {
         let preRotateAngle = -.pi_2 - lastAngleRotation
-        let preRotateAction = SKAction.rotate(byAngle: preRotateAngle, duration: preRotateAngle / -.pi_2) // t=S/v
-        
-        let rotateAction = SKAction.rotate(byAngle: -.pi_2, duration: 1)
-        let repeatAction = SKAction.repeat(rotateAction, count: 3)
         
         lastAngleRotation = -(rouletteDelegate?.getFinalAngle() ?? .pi_2)
-        let finalRotateAction = SKAction.rotate(byAngle: lastAngleRotation, duration: lastAngleRotation / -.pi_2 * 3) // t=S/v*4 to make slow rotating at the end of animation
+        
+        let rotateAction = SKAction.rotate(byAngle: preRotateAngle + (-.pi_2 * 5) + lastAngleRotation, duration: 6.0)
+        rotateAction.timingMode = .easeInEaseOut
+        
         let onFinishAction = SKAction.run(rouletteDelegate?.onFinishAnimation ?? {})
         
-        circleNode.run(SKAction.sequence([preRotateAction, repeatAction, finalRotateAction, onFinishAction]), withKey: "spinAction")
-        
+        circleNode.run(SKAction.sequence([rotateAction, onFinishAction]), withKey: "spinAction")
     }
 }

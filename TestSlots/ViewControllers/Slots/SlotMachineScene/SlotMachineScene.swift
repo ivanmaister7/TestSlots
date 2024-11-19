@@ -33,7 +33,7 @@ class SlotMachineScene: SKScene {
     }
     
     private func setupSlots() {
-        for row in 0..<configuration.rows {
+        for row in 0...configuration.rows {
             for col in 0..<configuration.columns {
                 let slot = SKSpriteNode()
                 slot.size = CGSize(width: slotWidth, height: slotHeight)
@@ -46,6 +46,7 @@ class SlotMachineScene: SKScene {
                 addChild(slot)
             }
         }
+        
         setupSlotsImages()
     }
     
@@ -63,19 +64,17 @@ class SlotMachineScene: SKScene {
     func spinSlots() {
         applyAnimation()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.46) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             guard let self else { return }
             self.stopAnimation()
         }
     }
     
     private func applyAnimation() {
-        hideSomeRows()
-        
         moveVisibleRows()
         
         spinTimer?.invalidate()
-        spinTimer = Timer.scheduledTimer(timeInterval: 0.05,
+        spinTimer = Timer.scheduledTimer(timeInterval: 0.1,
                                          target: self,
                                          selector: #selector(updateSlotSymbols),
                                          userInfo: nil,
@@ -85,29 +84,31 @@ class SlotMachineScene: SKScene {
     private func stopAnimation() {
         spinTimer?.invalidate()
         setupSlotsImages()
-        slotLabels[5...slotLabels.count - 1].forEach { slot in
-            slot.isHidden = false
-        }
-        slotsDelegate?.onFinishAnimation()
-    }
-    
-    
-    private func hideSomeRows() {
-        slotLabels[5...slotLabels.count - 1].forEach { slot in
-            slot.isHidden = true
-        }
     }
     
     private func moveVisibleRows() {
-        let animationYStep = size.height - slotHeight / 2
-        slotLabels[0...4].forEach { slot in
-            let spinAction = SKAction.sequence([
-                SKAction.moveBy(x: 0, y: -animationYStep, duration: 0.05),
-                SKAction.moveBy(x: 0, y: animationYStep, duration: 0.05)
-            ])
-            slot.run(SKAction.repeat(spinAction, count: 15))
+        let animationYStep = slotHeight
+        let moveDown = SKAction.moveBy(x: 0, y: -animationYStep, duration: 0.1)
+        let resetPosition = SKAction.moveBy(x: 0, y: animationYStep, duration: 0.0)
+        
+        let spinAction = SKAction.sequence([moveDown, resetPosition])
+        let spinActionCyclic = SKAction.repeat(spinAction, count: 20)
+        
+        let fullAction = SKAction.sequence([
+            resetPosition,
+            spinActionCyclic,
+            moveDown
+        ])
+        fullAction.timingMode = .easeOut
+        
+        slotLabels.forEach { $0.run(fullAction) }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + fullAction.duration) { [weak self] in
+            guard let self else { return }
+            self.slotsDelegate?.onFinishAnimation()
         }
     }
+
     
     @objc private func updateSlotSymbols() {
         slotLabels.forEach { slot in

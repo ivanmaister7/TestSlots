@@ -17,6 +17,8 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
     weak var plinkoDelegate: PlinkoSceneDelegate?
     private var ballNode: SKSpriteNode!
     
+    var pegSize: CGSize!
+    
     override func didMove(to view: SKView) {
         backgroundColor = .clear
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
@@ -26,10 +28,12 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
     }
     
     private func createPlinkoBoard() {
-        let pegSize = CGSize(width: 15, height: 15)
+        let pegMaxQuantity: CGFloat = CGFloat(rows + columns) - 1.0
         
-        let spacingX: CGFloat = 35
-        let spacingY: CGFloat = 40
+        let spacingX: CGFloat = self.size.width / (pegMaxQuantity + 1) //self.size.width = pegQuantity * spacingX / 2 + pegQuantity+1 * spacingX
+        let spacingY: CGFloat = spacingX + 5
+        
+        pegSize = CGSize(width: spacingX / 2.3, height: spacingX / 2.3)
         
         for row in 0..<rows {
             let pegsInRow = columns + row
@@ -59,8 +63,10 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
         for i in 0..<rows {
             let bucket = SKSpriteNode(imageNamed: bucketImages[i] ?? "bucket1")
             bucket.size = bucketSize
-            bucket.position = CGPoint(x: bucketSpacing * CGFloat(i + 4) + bucketWidth * CGFloat(i),
-                                      y: bucketSpacing * 2)
+            bucket.position = CGPoint(
+                x: size.width / 2 + CGFloat(i - rows / 2) * (bucketSpacing + bucketWidth) + (rows % 2 == 0 ? bucketSpacing / 2 : 0),
+                y: bucketSpacing * 2
+            )
             bucket.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: bucketWidth, height: 20))
             bucket.physicsBody?.isDynamic = false
             bucket.name = "bucket\(i + 1)"
@@ -73,11 +79,10 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func dropBall() {
-        let ballRadius = 8.5
-        let ballSize = CGSize(width: ballRadius * 2, height: ballRadius * 2)
+        let ballRadius = pegSize.width / 2
         
         ballNode = SKSpriteNode(imageNamed: "bigBall")
-        ballNode.size = ballSize
+        ballNode.size = pegSize
         ballNode.position = CGPoint(x: size.width / 2 + 10, y: size.height - 30)
         
         // Add physics body to the ball
@@ -115,7 +120,7 @@ class PlinkoScene: SKScene, SKPhysicsContactDelegate {
     
     private func addRandomBounce(to node: SKNode) {
         let randomDirection = CGFloat.random(in: -1...1) // Choose a random direction
-        let randomImpulse = CGVector(dx: randomDirection * 1.5, dy: 0) // Apply random impulse in X direction
+        let randomImpulse = CGVector(dx: randomDirection * 0.5, dy: 0) // Apply random impulse in X direction
         node.physicsBody?.applyImpulse(randomImpulse)
     }
 }

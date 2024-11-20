@@ -23,7 +23,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RouletteBg" translatesAutoresizingMaskIntoConstraints="NO" id="fmd-k5-RZE">
                     <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBg" translatesAutoresizingMaskIntoConstraints="NO" id="wFv-dl-zAK">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBg" translatesAutoresizingMaskIntoConstraints="NO" id="wFv-dl-zAK">
                     <rect key="frame" x="0.0" y="326.33333333333331" width="852" height="66.666666666666686"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-Vu-dF2">

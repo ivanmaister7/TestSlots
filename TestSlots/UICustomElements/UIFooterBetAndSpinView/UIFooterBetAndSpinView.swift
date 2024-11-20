@@ -147,7 +147,7 @@ class UIFooterBetAndSpinView: UIView, UIFooterBetAndSpinViewModelDelegate {
         }
         
         balanceLabel.snp.remakeConstraints { view in
-            view.trailing.equalTo(spinButton.snp.trailing).offset(-topBalanceOffset)
+            view.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).offset(-topBalanceOffset - spacingX)
             view.top.equalToSuperview().offset(4 * topOffset)
             view.width.equalToSuperview().multipliedBy(0.15)
             view.height.equalToSuperview().multipliedBy(0.1)
